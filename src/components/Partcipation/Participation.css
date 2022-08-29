@@ -1,0 +1,140 @@
+.hero{
+    width: 100%;
+    height: 65vh;
+    background: #0079C1;
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text h1{
+    /* width: 811px;
+    height: 233px; */
+    text-align: left;
+    /* position: relative; */
+    padding-top: 210px;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 50px;
+    font-style: bold;
+}
+.hero-text p{
+    /* width: 100px;
+    height: 201px; */
+    text-align: left;
+    /* position: relative; */
+    /* width: 1139px;
+    height: 201px; */
+    /* margin-left: 386px; */
+    padding-top:22px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: medium;
+    font-size: 24px;
+    line-height: 46px;
+
+    color: white;
+
+}
+
+.hello-img{
+    width: 800px;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.btn{
+
+    width: 371px;
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 70px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 48px;
+    color: #D0C2C2;
+    background: rgba(199, 51, 51, 0.85);
+    border-radius: 40px;
+}
+
+.mouseclick{
+    text-align: center;
+    padding-top: 130px;
+    margin-top: 30px;
+}
+
+.finger-img{
+    height: 50px;
+    width: 50px;
+    bottom: 10px;
+    display: none;
+    animation: bounce 2s infinite;
+}
+
+#mouse-click{
+    /* padding-top : 22px;
+    margin-left: 20px;
+    padding-bottom: 30px;
+    align-self: center;
+     padding-left: 1000px;  */
+    animation-iteration-count: infinite;
+}
+#mouse-click {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-25px);
+    }
+    60% {
+        transform: translateY(-25px);
+    }
+}
+
+@media (max-width: 1060px) {
+    .hero{
+        width: 100%;
+        height: 600px;
+        text-align: center;
+    }
+    .hero-text h1{
+        text-align: center;
+        font-size: 24px;
+        margin-top: -120px;
+    }
+    .hero-text p{
+        font-size: 20px;
+    }
+    .hello-col-2{
+        display: none;
+    }
+    .mouseclick{
+        margin-top: -100px;
+    }
+    #mouse-click{
+        display: none;
+    }
+    .finger-img{
+        text-align: center;
+        margin-bottom: 30px;
+        display: inline;
+    }
+}
+
+@media (max-width: 90px) {
+    .hello-text{
+        text-align: center;
+    }
+}

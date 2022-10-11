@@ -23,9 +23,9 @@ function Footer() {
                                     <div className="footer-widget">
                                         <h4>Quick Link</h4>
                                         <ul className="ft-link">
-                                            <li><a href="portfolio.html">Work</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="contact.html">Let's Talk</a></li>
+                                            <li><a href="">Membership</a></li>
+                                            <li><a href="">Volunteer</a></li>
+                                            <li><a href="">Let's Talk</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -33,8 +33,8 @@ function Footer() {
                                     <div className="footer-widget">
                                         <h4>Say Hello</h4>
                                         <ul className="ft-link">
-                                            <li><a href="mailto:admin@example.com">admin@example.com</a></li>
-                                            <li><a href="mailto:hr@example.com">hr@example.com</a></li>
+                                            <li><a href="mailto:hi@northernboxcommunity.com">hi@northernboxcommunity.com</a></li>
+                                            <li><a href="mailto:contact@northernboxcommunity.com">contact@northernboxcommunity.com</a></li>
                                         </ul>
 
                                         <div className="social-share-inner">

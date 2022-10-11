@@ -2,91 +2,14 @@ import React from 'react';
 import ProgramAreas from "../ProgramAreas/ProgramAreas";
 import AboutComponent from "../About/AboutComponent";
 import Partnerships from "../Partnerships/Partnerships";
+import Hero from "../Hero/Hero";
 
 function Home() {
     return (
         <main className="page-wrapper">
 
             {/*// <!-- Start Slider Area  -->*/}
-            <div className="rn-slider-area slider-activation rn-slick-activation rn-slick-dot dot-light mb--0"
-                 data-slick-options='{
-                "slidesToShow": 1,
-                "slidesToScroll": 1,
-                "arrows": true,
-                "fade": true,
-                "infinite": true,
-                "easing": "fade",
-                "infinite": true,
-                "adaptiveHeight": true,
-                "dots": true
-            }'>
-                {/*// <!-- Start Single Slide  -->*/}
-                <div
-                    className="slide slide-style-2 fullscreen d-flex align-items-center justify-content-center bg_image bg_image--15"
-                    data-black-overlay="8">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="inner text-center">
-                                    <h1 className="title theme-gradient">Learn.</h1>
-                                    <p className="description">There are many variations of passages of Lorem Ipsum
-                                        available but the majority have suffered alteration.</p>
-                                    <div className="slide-btn">
-                                        <a className="rn-button-style--2 btn-primary-color" href="contact.html">Contact
-                                            Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/*// <!-- End Single Slide  -->*/}
-                {/*//*/}
-                {/*// <!-- Start Single Slide  -->*/}
-                <div
-                    className="slide slide-style-2 fullscreen d-flex align-items-center justify-content-center bg_image bg_image--12"
-                    data-black-overlay="8">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="inner text-center">
-                                    <h1 className="title theme-gradient">Inspire.</h1>
-                                    <p className="description">There are many variations of passages of Lorem Ipsum
-                                        available but the majority have suffered alteration.</p>
-                                    <div className="slide-btn">
-                                        <a className="rn-button-style--2 btn-primary-color" href="contact.html">Contact
-                                            Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/*// <!-- End Single Slide  -->*/}
-                {/*//*/}
-                {/*// <!-- Start Single Slide  -->*/}
-                <div
-                    className="slide slide-style-2 fullscreen d-flex align-items-center justify-content-center bg_image bg_image--12"
-                    data-black-overlay="8">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="inner text-center">
-                                    <h1 className="title theme-gradient">Innovate.</h1>
-                                    <p className="description">There are many variations of passages of Lorem Ipsum
-                                        available but the majority have suffered alteration.</p>
-                                    <div className="slide-btn">
-                                        <a className="rn-button-style--2 btn-primary-color" href="contact.html">Contact
-                                            Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/*// <!-- End Single Slide  -->*/}
-
-            </div>
+            <Hero/>
             {/*// <!-- End Slider Area  -->*/}
             {/*//*/}
             {/*// <!-- Start About Area  -->*/}
@@ -100,8 +23,8 @@ function Home() {
                         <div className="col-lg-4 col-12">
                             <div className="section-title text-start mt--30 mt_md--5 mt_mobile--5 mb_mobile--10">
                                 <h2 className="title">What We Are</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration.</p>
+                                <p>NBC embraces the diversity, equality, equity, and uniqueness of members, and the
+                                    communities that we serve by committing to be an anti-tribal community.</p>
                                 <div className="service-btn"><a className="btn-transparent rn-btn-dark"
                                                                 href="https://rainbowit.net/service"><span
                                     className="text">Get Started</span></a></div>

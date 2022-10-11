@@ -28,9 +28,8 @@ function AboutComponent(props) {
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div className="about-us-list">
-                                            <h3 className="title">Our Vision</h3>
-                                            <p>There are many vtions of passages of Lorem Ipsum available, but the
-                                                majority have suffered.</p>
+                                            <h3 className="title">Our Approach</h3>
+                                            <p>We are one of the inspiring tech communities that seeks to drive tech literacy and interest.through space for collaboration, learning, and networking to increase the skills of the young people in the community to create solutions for the community</p>
                                         </div>
                                     </div>
                                 </div>

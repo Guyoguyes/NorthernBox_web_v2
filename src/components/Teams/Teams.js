@@ -31,11 +31,11 @@ function Teams(props) {
                             <div class="col-lg-4 col-md-6 col-12">
                                 <div class="team">
                                     <div class="thumbnail">
-                                        <img src="assets/images/team/team-01.jpg" alt="Team Images" />
+                                        <img src="assets/images/team/guyo.png" alt="Team Images" />
                                     </div>
                                     <div class="content">
-                                        <h4 class="title">Jone Due</h4>
-                                        <p class="designation">Sr. Web Developer</p>
+                                        <h4 class="title">Guyo Abdub</h4>
+                                        <p class="designation">Software Engineer</p>
                                     </div>
                                     <ul class="social-icon">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -51,11 +51,11 @@ function Teams(props) {
                             <div class="col-lg-4 col-md-6 col-12">
                                 <div class="team">
                                     <div class="thumbnail">
-                                        <img src="assets/images/team/team-02.jpg" alt="Team Images" />
+                                        <img src="assets/images/team/diram.png" alt="Team Images" />
                                     </div>
                                     <div class="content">
-                                        <h4 class="title">Jone Due</h4>
-                                        <p class="designation">Sr. Web Developer</p>
+                                        <h4 class="title">Diram Bora Guyo</h4>
+                                        <p class="designation">Software Engineer</p>
                                     </div>
                                     <ul class="social-icon">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -71,17 +71,34 @@ function Teams(props) {
                             <div class="col-lg-4 col-md-6 col-12">
                                 <div class="team">
                                     <div class="thumbnail">
-                                        <img src="assets/images/team/team-03.jpg" alt="Team Images" />
+                                        <img src="assets/images/team/galgallo.png" alt="Team Images" />
                                     </div>
                                     <div class="content">
-                                        <h4 class="title">Jone Due</h4>
-                                        <p class="designation">Sr. Web Developer</p>
+                                        <h4 class="title">Galgallo Wako</h4>
+                                        <p class="designation">Software Engineer</p>
                                     </div>
                                     <ul class="social-icon">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                         <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-6 col-12">
+                                <div className="team">
+                                    <div className="thumbnail">
+                                        <img src="assets/images/team/mustafa.png" alt="Team Images"/>
+                                    </div>
+                                    <div className="content">
+                                        <h4 className="title">Mustafa Ahmed</h4>
+                                        <p className="designation">Software Engineer</p>
+                                    </div>
+                                    <ul className="social-icon">
+                                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
                                     </ul>
                                 </div>
                             </div>

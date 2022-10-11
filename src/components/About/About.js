@@ -12,6 +12,7 @@ function About(props) {
                         <div className="col-lg-12">
                             <div className="breadcrumb-inner pt--100 pt_sm--40 pt_md--50">
                                 <h2 className="title">About</h2>
+                                <p>Driving technology to Northern Frointer</p>
                                 <ul className="page-list">
                                     <li><a href="index.html">Home</a></li>
                                     <li className="current-page">About</li>

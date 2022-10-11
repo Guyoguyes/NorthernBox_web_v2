@@ -8,7 +8,7 @@ function Navbar(props) {
                     <div className="header-left">
                         <div className="logo">
                             <a href="index.html">
-                                <img src="/assets/images/nbc.png" alt="Creative Agency Logo" />
+                                <img src="assets/images/nbc.png" alt="NorthernBox Logo" />
                             </a>
                         </div>
                     </div>
@@ -28,8 +28,8 @@ function Navbar(props) {
                                     <li className="has-droupdown">
                                         <a href="blogs">Activities</a>
                                         <ul className="submenu">
-                                            <li><a href="">Events</a></li>
-                                            <li><a href="">Blogs</a></li>
+                                            <li><a href="events">Events</a></li>
+                                            <li><a href="blogs">Blogs</a></li>
                                             <li><a href="project">Projects</a></li>
                                         </ul>
                                     </li>
@@ -41,12 +41,12 @@ function Navbar(props) {
 
                         </div>
                         <div className="header-btn">
-                            <a className="rn-btn" href="#">
+                            <a className="rn-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfR4otBMjYE77DxuzG4IFTkOwkA4rRIhVnbmjoCJbdqpx0HMQ/viewform?usp=sf_link">
                                 <span>Join</span>
                             </a>
                         </div>
                         <div className="header-btn">
-                            <a className="rn-btn" href="#">
+                            <a className="rn-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdicIssy67YAg0O9iMGKp29BomtClkOGgYfSD9UWokHVHudyw/viewform?usp=sf_link">
                                 <span>Volunteer</span>
                             </a>
                         </div>

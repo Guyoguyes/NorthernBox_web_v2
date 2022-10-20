@@ -33,15 +33,15 @@ function Events(props) {
                                 <div class="portfolio-static">
                                     <div class="thumbnail-inner">
                                         <div class="thumbnail">
-                                            <img src="assets/images/portfolio/dp-portfolio-01.jpg" alt="Portfolio Images"/>
+                                            <img src="assets/images/portfolio/meet2.png" alt="Portfolio Images"/>
                                         </div>
                                     </div>
-                                    <div class="content">
-                                        <div class="inner">
-                                            <p>Web Design</p>
-                                            <h4>T-shirt design is the part of design</h4>
-                                        </div>
-                                    </div>
+                                    {/*<div class="content">*/}
+                                    {/*    <div class="inner">*/}
+                                    {/*        <p>Web Design</p>*/}
+                                    {/*        <h4>T-shirt design is the part of design</h4>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </a>
                             {/*// <!-- End Single Gallery -->*/}
@@ -51,15 +51,15 @@ function Events(props) {
                                 <div class="portfolio-static">
                                     <div class="thumbnail-inner">
                                         <div class="thumbnail">
-                                            <img src="assets/images/portfolio/dp-portfolio-02.jpg" alt="Portfolio Images"/>
+                                            <img src="assets/images/portfolio/meet1.png" alt="Portfolio Images"/>
                                         </div>
                                     </div>
-                                    <div class="content">
-                                        <div class="inner">
-                                            <p>App Development</p>
-                                            <h4>The service provide for designer</h4>
-                                        </div>
-                                    </div>
+                                    {/*<div class="content">*/}
+                                    {/*    <div class="inner">*/}
+                                    {/*        <p>App Development</p>*/}
+                                    {/*        <h4>The service provide for designer</h4>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
                                 </div>
                             </a>
                             {/*// <!-- End Single Gallery -->*/}
@@ -147,126 +147,126 @@ function Events(props) {
                 {/*//*/}
                 {/*//*/}
                 {/*// <!-- Start Gallery Area  -->*/}
-                <div class="rn-gallery-area rn-section-gap bg_color--1">
-                    <div class="container">
-                        <div class="row row row--5">
+                {/*<div class="rn-gallery-area rn-section-gap bg_color--1">*/}
+                {/*    <div class="container">*/}
+                {/*        <div class="row row row--5">*/}
                             {/*// <!-- Start Single Portfolio  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="portfolio-style--3">
-                                    <div class="thumbnail">
-                                        <a href="portfolio-details.html">
-                                            <img class="w-100" src="assets/images/portfolio/portfolio-1.jpg" alt="Portfolio Images"/>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="portfoliotype">Development</p>
-                                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>
-                                        <div class="portfolio-btn">
-                                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="portfolio-style--3">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <a href="portfolio-details.html">*/}
+                {/*                            <img class="w-100" src="assets/images/portfolio/portfolio-1.jpg" alt="Portfolio Images"/>*/}
+                {/*                        </a>*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <p class="portfoliotype">Development</p>*/}
+                {/*                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>*/}
+                {/*                        <div class="portfolio-btn">*/}
+                {/*                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Portfolio  -->*/}
                             {/*//*/}
                             {/*// <!-- Start Single Portfolio  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="portfolio-style--3">
-                                    <div class="thumbnail">
-                                        <a href="portfolio-details.html">
-                                            <img class="w-100" src="assets/images/portfolio/portfolio-2.jpg" alt="Portfolio Images"/>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="portfoliotype">Html</p>
-                                        <h4 class="title"><a href="portfolio-details.html">Getting tickets to the big show</a></h4>
-                                        <div class="portfolio-btn">
-                                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="portfolio-style--3">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <a href="portfolio-details.html">*/}
+                {/*                            <img class="w-100" src="assets/images/portfolio/portfolio-2.jpg" alt="Portfolio Images"/>*/}
+                {/*                        </a>*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <p class="portfoliotype">Html</p>*/}
+                {/*                        <h4 class="title"><a href="portfolio-details.html">Getting tickets to the big show</a></h4>*/}
+                {/*                        <div class="portfolio-btn">*/}
+                {/*                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Portfolio  -->*/}
                             {/*//*/}
                             {/*// <!-- Start Single Portfolio  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="portfolio-style--3">
-                                    <div class="thumbnail">
-                                        <a href="portfolio-details.html">
-                                            <img class="w-100" src="assets/images/portfolio/portfolio-3.jpg" alt="Portfolio Images"/>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="portfoliotype">Graphic</p>
-                                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>
-                                        <div class="portfolio-btn">
-                                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="portfolio-style--3">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <a href="portfolio-details.html">*/}
+                {/*                            <img class="w-100" src="assets/images/portfolio/portfolio-3.jpg" alt="Portfolio Images"/>*/}
+                {/*                        </a>*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <p class="portfoliotype">Graphic</p>*/}
+                {/*                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>*/}
+                {/*                        <div class="portfolio-btn">*/}
+                {/*                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Portfolio  -->*/}
                             {/*//*/}
                             {/*// <!-- Start Single Portfolio  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="portfolio-style--3">
-                                    <div class="thumbnail">
-                                        <a href="portfolio-details.html">
-                                            <img class="w-100" src="assets/images/portfolio/portfolio-4.jpg" alt="Portfolio Images"/>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="portfoliotype">Freelancer</p>
-                                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>
-                                        <div class="portfolio-btn">
-                                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="portfolio-style--3">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <a href="portfolio-details.html">*/}
+                {/*                            <img class="w-100" src="assets/images/portfolio/portfolio-4.jpg" alt="Portfolio Images"/>*/}
+                {/*                        </a>*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <p class="portfoliotype">Freelancer</p>*/}
+                {/*                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>*/}
+                {/*                        <div class="portfolio-btn">*/}
+                {/*                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Portfolio  -->*/}
                             {/*//*/}
                             {/*// <!-- Start Single Portfolio  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="portfolio-style--3">
-                                    <div class="thumbnail">
-                                        <a href="portfolio-details.html">
-                                            <img class="w-100" src="assets/images/portfolio/portfolio-5.jpg" alt="Portfolio Images"/>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="portfoliotype">Freelancer</p>
-                                        <h4 class="title"><a href="portfolio-details.html">The Language of Developer</a></h4>
-                                        <div class="portfolio-btn">
-                                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="portfolio-style--3">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <a href="portfolio-details.html">*/}
+                {/*                            <img class="w-100" src="assets/images/portfolio/portfolio-5.jpg" alt="Portfolio Images"/>*/}
+                {/*                        </a>*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <p class="portfoliotype">Freelancer</p>*/}
+                {/*                        <h4 class="title"><a href="portfolio-details.html">The Language of Developer</a></h4>*/}
+                {/*                        <div class="portfolio-btn">*/}
+                {/*                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Portfolio  -->*/}
                             {/*//*/}
                             {/*// <!-- Start Single Portfolio  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="portfolio-style--3">
-                                    <div class="thumbnail">
-                                        <a href="portfolio-details.html">
-                                            <img class="w-100" src="assets/images/portfolio/portfolio-6.jpg" alt="Portfolio Images"/>
-                                        </a>
-                                    </div>
-                                    <div class="content">
-                                        <p class="portfoliotype">Freelancer</p>
-                                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>
-                                        <div class="portfolio-btn">
-                                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="portfolio-style--3">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <a href="portfolio-details.html">*/}
+                {/*                            <img class="w-100" src="assets/images/portfolio/portfolio-6.jpg" alt="Portfolio Images"/>*/}
+                {/*                        </a>*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <p class="portfoliotype">Freelancer</p>*/}
+                {/*                        <h4 class="title"><a href="portfolio-details.html">You can see your Portfolio</a></h4>*/}
+                {/*                        <div class="portfolio-btn">*/}
+                {/*                            <a class="rn-btn text-white" href="portfolio-details.html">Read More</a>*/}
+                {/*                        </div>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Portfolio  -->*/}
 
-                        </div>
-                    </div>
-                </div>
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 {/*// <!-- End Gallery Area  -->*/}
 
 

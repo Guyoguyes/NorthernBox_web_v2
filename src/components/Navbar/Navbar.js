@@ -16,7 +16,7 @@ function Navbar(props) {
                         <div className="mainmenunav d-lg-block">
                             <nav className="main-menu-navbar">
                                 <ul className="mainmenu">
-                                    <li className="has-droupdown">
+                                    <li className="has-droupdown" style={{fontSize: '26px'}}>
                                         <a href='home'>Home</a>
                                     </li>
                                     <li>

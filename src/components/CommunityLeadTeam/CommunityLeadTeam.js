@@ -19,11 +19,11 @@ function CommunityLeadTeam(props) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/team-01.jpg" alt="Team Images"/>
+                                <img src="assets/images/team/guyo.png" alt="Team Images"/>
                             </div>
                             <div className="content">
-                                <h4 className="title">Jone Due</h4>
-                                <p className="designation">Sr. Web Developer</p>
+                                <h4 className="title">Guyo Abdub</h4>
+                                <p className="designation">Software Engineer</p>
                             </div>
                             <ul className="social-icon">
                                 <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -39,11 +39,11 @@ function CommunityLeadTeam(props) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/team-02.jpg" alt="Team Images"/>
+                                <img src="assets/images/team/diram.png" alt="Team Images"/>
                             </div>
                             <div className="content">
-                                <h4 className="title">Jone Due</h4>
-                                <p className="designation">Sr. Web Developer</p>
+                                <h4 className="title">Diram Bora Guyo</h4>
+                                <p className="designation">Software Engineer</p>
                             </div>
                             <ul className="social-icon">
                                 <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -59,11 +59,11 @@ function CommunityLeadTeam(props) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/team-03.jpg" alt="Team Images"/>
+                                <img src="assets/images/team/galgallo.png" alt="Team Images"/>
                             </div>
                             <div className="content">
-                                <h4 className="title">Jone Due</h4>
-                                <p className="designation">Sr. Web Developer</p>
+                                <h4 className="title">Galgallo Wako</h4>
+                                <p className="designation">Software Engineer</p>
                             </div>
                             <ul className="social-icon">
                                 <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -74,6 +74,23 @@ function CommunityLeadTeam(props) {
                         </div>
                     </div>
                     {/*// <!-- End Single Team Area  -->*/}
+                    <div className="col-lg-4 col-md-6 col-12">
+                        <div className="team">
+                            <div className="thumbnail">
+                                <img src="assets/images/team/mustafa.png" alt="Team Images"/>
+                            </div>
+                            <div className="content">
+                                <h4 className="title">Mustafa Ahmed</h4>
+                                <p className="designation">Software Engineer</p>
+                            </div>
+                            <ul className="social-icon">
+                                <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

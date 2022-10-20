@@ -3881,7 +3881,9 @@ font-family: 'Poppins', sans-serif;
 }
 
 .bg_image--15 {
-  background-image: url(../images/bg/bg-image-15.jpg);
+  background-image: url(../images/bg/Northern-Kenya.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .bg_image--16 {
@@ -11456,7 +11458,9 @@ Footer Styles
   height: 100%;
   left: 0;
   top: 0;
-  background-image: url("../images/pattern-1.png");
+  background-image: url("../images/pattern.png");
+  background-size: cover;
+  background-position: center;
   content: "";
   z-index: 1;
   opacity: 0.5;
@@ -11467,7 +11471,6 @@ Footer Styles
   position: relative;
 }
 .footer-default .footer-left .inner::after {
-  content: url(../images/logo/big-logo.png);
   position: absolute;
   right: 0;
   top: 50%;
@@ -17470,6 +17473,7 @@ a.purchase-btn:hover {
 
   .active-dark-mode .header-area .header-wrapper .mainmenunav ul.mainmenu li a {
     color: #c6c9d8;
+    font-size: 20px;
   }
 
   .active-dark-mode .header-area .header-wrapper.menu-open .close-menu span {

@@ -102,6 +102,23 @@ function Teams(props) {
                                     </ul>
                                 </div>
                             </div>
+                            <div className="col-lg-4 col-md-6 col-12">
+                                <div className="team">
+                                    <div className="thumbnail">
+                                        <img src="assets/images/team/adho.jpg" alt="Team Images"/>
+                                    </div>
+                                    <div className="content">
+                                        <h4 className="title">Adho Adhi Galgallo</h4>
+                                        <p className="designation">Software Engineer</p>
+                                    </div>
+                                    <ul className="social-icon">
+                                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
                             {/*// <!-- End Single Team Area  -->*/}
                         </div>
                     </div>
@@ -109,166 +126,166 @@ function Teams(props) {
                 {/*// <!-- Start team Area  -->*/}
                 {/*//*/}
                 {/*// <!-- Start team Area  -->*/}
-                <div class="rn-team-area rn-section-gap bg_color--5">
-                    <div class="container">
-                        <div class="row mt_dec--30">
+                {/*<div class="rn-team-area rn-section-gap bg_color--5">*/}
+                {/*    <div class="container">*/}
+                {/*        <div class="row mt_dec--30">*/}
                             {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="team-static">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/team-01.jpg" alt="Blog Images" />
-                                    </div>
-                                    <div class="inner">
-                                        <div class="content">
-                                            <h4 class="title">Jone Jan</h4>
-                                            <p class="designation">Sr. Web Developer</p>
-                                        </div>
-                                        <ul class="social-transparent liststyle d-flex">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-3 col-md-6 col-12">*/}
+                {/*                <div class="team-static">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <img src="assets/images/team/team-01.jpg" alt="Blog Images" />*/}
+                {/*                    </div>*/}
+                {/*                    <div class="inner">*/}
+                {/*                        <div class="content">*/}
+                {/*                            <h4 class="title">Jone Jan</h4>*/}
+                {/*                            <p class="designation">Sr. Web Developer</p>*/}
+                {/*                        </div>*/}
+                {/*                        <ul class="social-transparent liststyle d-flex">*/}
+                {/*                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>*/}
+                {/*                        </ul>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Team Area  -->*/}
                             {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="team-static">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/team-03.jpg" alt="Blog Images" />
-                                    </div>
-                                    <div class="inner">
-                                        <div class="content">
-                                            <h4 class="title">Jone Jan</h4>
-                                            <p class="designation">Sr. Web Developer</p>
-                                        </div>
-                                        <ul class="social-transparent liststyle d-flex">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            {/*// <!-- End Single Team Area  -->*/}
-                            {/*//*/}
-                            {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="team-static">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/team-05.jpg" alt="Blog Images" />
-                                    </div>
-                                    <div class="inner">
-                                        <div class="content">
-                                            <h4 class="title">Jone Jan</h4>
-                                            <p class="designation">Sr. Web Developer</p>
-                                        </div>
-                                        <ul class="social-transparent liststyle d-flex">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-3 col-md-6 col-12">*/}
+                {/*                <div class="team-static">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <img src="assets/images/team/team-03.jpg" alt="Blog Images" />*/}
+                {/*                    </div>*/}
+                {/*                    <div class="inner">*/}
+                {/*                        <div class="content">*/}
+                {/*                            <h4 class="title">Jone Jan</h4>*/}
+                {/*                            <p class="designation">Sr. Web Developer</p>*/}
+                {/*                        </div>*/}
+                {/*                        <ul class="social-transparent liststyle d-flex">*/}
+                {/*                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>*/}
+                {/*                        </ul>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Team Area  -->*/}
                             {/*//*/}
                             {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <div class="team-static">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/team-06.jpg" alt="Blog Images" />
-                                    </div>
-                                    <div class="inner">
-                                        <div class="content">
-                                            <h4 class="title">Jone Jan</h4>
-                                            <p class="designation">Sr. Web Developer</p>
-                                        </div>
-                                        <ul class="social-transparent liststyle d-flex">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-3 col-md-6 col-12">*/}
+                {/*                <div class="team-static">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <img src="assets/images/team/team-05.jpg" alt="Blog Images" />*/}
+                {/*                    </div>*/}
+                {/*                    <div class="inner">*/}
+                {/*                        <div class="content">*/}
+                {/*                            <h4 class="title">Jone Jan</h4>*/}
+                {/*                            <p class="designation">Sr. Web Developer</p>*/}
+                {/*                        </div>*/}
+                {/*                        <ul class="social-transparent liststyle d-flex">*/}
+                {/*                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>*/}
+                {/*                        </ul>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
+                            {/*// <!-- End Single Team Area  -->*/}
+                            {/*//*/}
+                            {/*// <!-- Start Single Team Area  -->*/}
+                {/*            <div class="col-lg-3 col-md-6 col-12">*/}
+                {/*                <div class="team-static">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <img src="assets/images/team/team-06.jpg" alt="Blog Images" />*/}
+                {/*                    </div>*/}
+                {/*                    <div class="inner">*/}
+                {/*                        <div class="content">*/}
+                {/*                            <h4 class="title">Jone Jan</h4>*/}
+                {/*                            <p class="designation">Sr. Web Developer</p>*/}
+                {/*                        </div>*/}
+                {/*                        <ul class="social-transparent liststyle d-flex">*/}
+                {/*                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                {/*                            <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>*/}
+                {/*                        </ul>*/}
+                {/*                    </div>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Team Area  -->*/}
 
-                        </div>
-                    </div>
-                </div>
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 {/*// <!-- Start team Area  -->*/}
                 {/*//*/}
                 {/*// <!-- Start team Area  -->*/}
-                <div class="rn-team-area rn-section-gap bg_color--1">
-                    <div class="container">
-                        <div class="row mt_dec--30">
-                            {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="team team-style--bottom">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/team-07.jpg" alt="Team Images" />
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title">Jone Due</h4>
-                                        <p class="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul class="social-icon">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                {/*<div class="rn-team-area rn-section-gap bg_color--1">*/}
+                {/*    <div class="container">*/}
+                {/*        <div class="row mt_dec--30">*/}
+                {/*            // <!-- Start Single Team Area  -->*/}
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="team team-style--bottom">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <img src="assets/images/team/team-07.jpg" alt="Team Images" />*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <h4 class="title">Jone Due</h4>*/}
+                {/*                        <p class="designation">Sr. Web Developer</p>*/}
+                {/*                    </div>*/}
+                {/*                    <ul class="social-icon">*/}
+                {/*                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>*/}
+                {/*                    </ul>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Team Area  -->*/}
                             {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="team team-style--bottom">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/team-06.jpg" alt="Team Images" />
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title">Jone Due</h4>
-                                        <p class="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul class="social-icon">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="team team-style--bottom">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <img src="assets/images/team/team-06.jpg" alt="Team Images" />*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <h4 class="title">Jone Due</h4>*/}
+                {/*                        <p class="designation">Sr. Web Developer</p>*/}
+                {/*                    </div>*/}
+                {/*                    <ul class="social-icon">*/}
+                {/*                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>*/}
+                {/*                    </ul>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Team Area  -->*/}
                             {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="team team-style--bottom">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/team-05.jpg" alt="Team Images" />
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title">Jone Due</h4>
-                                        <p class="designation">Sr. Web Developer</p>
-                                    </div>
-                                    <ul class="social-icon">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                {/*            <div class="col-lg-4 col-md-6 col-12">*/}
+                {/*                <div class="team team-style--bottom">*/}
+                {/*                    <div class="thumbnail">*/}
+                {/*                        <img src="assets/images/team/team-05.jpg" alt="Team Images" />*/}
+                {/*                    </div>*/}
+                {/*                    <div class="content">*/}
+                {/*                        <h4 class="title">Jone Due</h4>*/}
+                {/*                        <p class="designation">Sr. Web Developer</p>*/}
+                {/*                    </div>*/}
+                {/*                    <ul class="social-icon">*/}
+                {/*                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>*/}
+                {/*                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>*/}
+                {/*                    </ul>*/}
+                {/*                </div>*/}
+                {/*            </div>*/}
                             {/*// <!-- End Single Team Area  -->*/}
 
-                        </div>
-                    </div>
-                </div>
+                {/*        </div>*/}
+                {/*    </div>*/}
+                {/*</div>*/}
                 {/*// <!-- Start team Area  -->*/}
 
             </main>

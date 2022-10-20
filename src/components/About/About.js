@@ -29,48 +29,7 @@ function About(props) {
                 {/*// <!-- Start About Area  -->*/}
                 {/*//*/}
                 {/*// <!-- Start Counterup Area  -->*/}
-                <div className="rn-counterup-area rn-section-gapBottom bg_color--1">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <div className="section-title text-center">
-                                    <h3 className="fontWeight500">Our Fun Facts</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="row">
-                            {/*// <!-- Start Single Counterup  -->*/}
-                            <div className="col-lg-4 col-md-4 col-sm-6 col-12">
-                                <div className="rn-counterup counterup_style--1">
-                                    <h5 className="counter count">992</h5>
-                                    <p className="description">The standard chunk of Lorem Ipsum used since the 1500s is
-                                        reproduced below for those.</p>
-                                </div>
-                            </div>
-                            {/*// <!-- Start Single Counterup  -->*/}
-                            {/*//*/}
-                            {/*// <!-- Start Single Counterup  -->*/}
-                            <div className="col-lg-4 col-md-4 col-sm-6 col-12">
-                                <div className="rn-counterup counterup_style--1">
-                                    <h5 className="counter count">575</h5>
-                                    <p className="description">The standard chunk of Lorem Ipsum used since the 1500s is
-                                        reproduced below for those.</p>
-                                </div>
-                            </div>
-                            {/*// <!-- Start Single Counterup  -->*/}
-                            {/*//*/}
-                            {/*// <!-- Start Single Counterup  -->*/}
-                            <div className="col-lg-4 col-md-4 col-sm-6 col-12">
-                                <div className="rn-counterup counterup_style--1">
-                                    <h5 className="counter count">69</h5>
-                                    <p className="description">The standard chunk of Lorem Ipsum used since the 1500s is
-                                        reproduced below for those.</p>
-                                </div>
-                            </div>
-                            {/*// <!-- Start Single Counterup  -->*/}
-                        </div>
-                    </div>
-                </div>
+                <funfact />
                 {/*// <!-- End Counterup Area  -->*/}
                 {/*//*/}
                 {/*// <!-- Start Finding us Area  -->*/}
@@ -79,15 +38,13 @@ function About(props) {
                         <div className="content-wrapper">
                             <div className="content">
                                 <h4 className="theme-gradient">Find Your Work Now</h4>
-                                <p>It is a long established fact that a reader will be distracted by the readable
-                                    content of
-                                    a page when looking at its layout. The point of using Lorem Ipsum is that.</p><a
+                                <p>It is important to surround yourself in an environment where you can be comfortable and motivated. When it comes to design and creative thinking, innovators need to have a space that is both open and encouraging</p><a
                                 className="rn-btn btn-white" href="about.html">Get Started</a>
                             </div>
                         </div>
                         <div className="thumbnail">
                             <div className="image">
-                                <img src="assets/images/about/finding-us-01.png" alt="Finding Images"/>
+                                <img src="assets/images/about/innovation.png" alt="Finding Images"/>
                             </div>
                         </div>
                     </div>
@@ -113,7 +70,7 @@ function About(props) {
                                                 below for those interested. Sections Bonorum et Malorum original.</p>
                                         </div>
                                         <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
+                                            <h6><span>Adho Adhi Galgallo </span> - Growth and Programs</h6>
                                         </div>
                                     </div>
                                     <div className="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
@@ -123,7 +80,7 @@ function About(props) {
                                                 below for those interested. Sections Bonorum et Malorum original.</p>
                                         </div>
                                         <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
+                                            <h6><span>Diram Bora Guyo </span> - Programs and Partnership</h6>
                                         </div>
                                     </div>
                                     <div className="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
@@ -133,7 +90,7 @@ function About(props) {
                                                 below for those interested. Sections Bonorum et Malorum original.</p>
                                         </div>
                                         <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
+                                            <h6><span>Galgallo Wako </span> - Operations and Technical Lead</h6>
                                         </div>
                                     </div>
                                     <div className="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
@@ -143,17 +100,7 @@ function About(props) {
                                                 below for those interested. Sections Bonorum et Malorum original.</p>
                                         </div>
                                         <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
-                                        </div>
-                                    </div>
-                                    <div className="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5-tab">
-                                        <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
-                                        </div>
-                                        <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
+                                            <h6><span>Guyo Abdub </span> - Business Development and Finance</h6>
                                         </div>
                                     </div>
                                     <div className="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab6-tab">
@@ -163,27 +110,7 @@ function About(props) {
                                                 below for those interested. Sections Bonorum et Malorum original.</p>
                                         </div>
                                         <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
-                                        </div>
-                                    </div>
-                                    <div className="tab-pane fade" id="tab7" role="tabpanel" aria-labelledby="tab7-tab">
-                                        <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
-                                        </div>
-                                        <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
-                                        </div>
-                                    </div>
-                                    <div className="tab-pane fade" id="tab8" role="tabpanel" aria-labelledby="tab8-tab">
-                                        <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
-                                        </div>
-                                        <div className="author-info">
-                                            <h6><span>Fatima Asrafy </span> - COO, AMERIMAR ENTERPRISES, INC.</h6>
+                                            <h6><span>Mustafa Ahmed </span> - Strategy and Marketing</h6>
                                         </div>
                                     </div>
                                 </div>
@@ -197,7 +124,7 @@ function About(props) {
                                                 aria-selected="true">
                                             <div className="testimonial-thumbnai">
                                                 <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-1.jpg"
+                                                    <img src="assets/images/team/adho.jpg"
                                                          alt="Testimonial Images"/>
                                                 </div>
                                             </div>
@@ -209,7 +136,7 @@ function About(props) {
                                                 type="button" aria-controls="tab2" aria-selected="false">
                                             <div className="testimonial-thumbnai">
                                                 <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-2.jpg"
+                                                    <img src="assets/images/team/diram.png"
                                                          alt="Testimonial Images"/>
                                                 </div>
                                             </div>
@@ -221,7 +148,7 @@ function About(props) {
                                                 type="button" aria-controls="tab3" aria-selected="false">
                                             <div className="testimonial-thumbnai">
                                                 <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-3.jpg"
+                                                    <img src="assets/images/team/galgallo.png"
                                                          alt="Testimonial Images"/>
                                                 </div>
                                             </div>
@@ -233,7 +160,7 @@ function About(props) {
                                                 type="button" aria-controls="tab4" aria-selected="false">
                                             <div className="testimonial-thumbnai">
                                                 <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-4.jpg"
+                                                    <img src="assets/images/team/guyo.png"
                                                          alt="Testimonial Images"/>
                                                 </div>
                                             </div>
@@ -245,43 +172,7 @@ function About(props) {
                                                 type="button" aria-controls="tab5" aria-selected="false">
                                             <div className="testimonial-thumbnai">
                                                 <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-5.jpg"
-                                                         alt="Testimonial Images"/>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-
-                                    <li>
-                                        <button id="tab6-tab" data-bs-toggle="tab" data-bs-target="#tab6" role="tab"
-                                                type="button" aria-controls="tab6" aria-selected="false">
-                                            <div className="testimonial-thumbnai">
-                                                <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-6.jpg"
-                                                         alt="Testimonial Images"/>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-
-                                    <li>
-                                        <button id="tab7-tab" data-bs-toggle="tab" data-bs-target="#tab7" role="tab"
-                                                type="button" aria-controls="tab7" aria-selected="false">
-                                            <div className="testimonial-thumbnai">
-                                                <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-7.jpg"
-                                                         alt="Testimonial Images"/>
-                                                </div>
-                                            </div>
-                                        </button>
-                                    </li>
-
-                                    <li>
-                                        <button id="tab8-tab" data-bs-toggle="tab" data-bs-target="#tab8" role="tab"
-                                                type="button" aria-controls="tab8" aria-selected="false">
-                                            <div className="testimonial-thumbnai">
-                                                <div className="thumb">
-                                                    <img src="assets/images/client/testimonial-8.jpg"
+                                                    <img src="assets/images/team/mustafa.png"
                                                          alt="Testimonial Images"/>
                                                 </div>
                                             </div>

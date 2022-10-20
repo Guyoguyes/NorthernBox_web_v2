@@ -4,7 +4,8 @@ function Contact(props) {
     return (
         <>
             <div className="rn-page-title-area pt--120 pb--190 pb_md--100 pb_sm--100 bg_image bg_image--17"
-                 data-black-overlay="5">
+                 data-black-overlay="5" style={{backgroundImage: 'url(assets/images/bg/netbhg.jpg)',
+                backgroundPosition: 'center', backgroundSize: 'cover'}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -103,7 +104,7 @@ function Contact(props) {
                                 </div>
                                 <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="thumbnail mb_md--40 mb_sm--40">
-                                        <img src="assets/images/about/about-6.jpg" alt="trydo"/>
+                                        <img src="assets/images/bg/contactbg.png" alt="trydo"/>
                                     </div>
                                 </div>
                             </div>

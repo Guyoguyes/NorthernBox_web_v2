@@ -15,8 +15,8 @@ function ProgramAreas(props) {
                         <div class="col-lg-12">
                             <div class="section-title text-center mb--30">
                                 <h2>Our Program Areas</h2>
-                                <p>There are many variations of passages of Lorem Ipsum available, <br/> but the majority
-                                    have suffered alteration.</p>
+                                <p>The Community is currently undertaking several projects starting form STEM education to
+                                startups and innovation incubation</p>
                             </div>
                         </div>
                     </div>
@@ -52,8 +52,9 @@ function ProgramAreas(props) {
                                         </div>
                                         <div class="content">
                                             <h3 class="title">Tech Diversity And Revolution</h3>
-                                            <p>I throw myself down among the tall grass by the stream as I lie close to
-                                                the earth.</p>
+                                            <p>Un-learning biases and changing the stereotypes is essential, if we are to see boys and girls
+                                                able to compete on a more equal footing for the jobs of the future. This goes hand-in-hand with
+                                                practical programmes that teach immediately relevant skills.</p>
                                         </div>
                                     </div>
                                 </a>
@@ -71,8 +72,8 @@ function ProgramAreas(props) {
                                         </div>
                                         <div class="content">
                                             <h3 class="title">Collaboration and Partnerships</h3>
-                                            <p>I throw myself down among the tall grass by the stream as I lie close to
-                                                the earth.</p>
+                                            <p>NorthernBox seeks to collaborate with other communities and startups to boost
+                                                skills development across industries and job market.</p>
                                         </div>
                                     </div>
                                 </a>

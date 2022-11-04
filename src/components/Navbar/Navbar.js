@@ -26,11 +26,11 @@ function Navbar(props) {
                                         <a href="team">Team</a>
                                     </li>
                                     <li className="has-droupdown">
-                                        <a href="blogs">Activities</a>
+                                        <a href="">Activities</a>
                                         <ul className="submenu">
                                             <li><a href="events">Events</a></li>
-                                            <li><a href="blogs">Blogs</a></li>
-                                            <li><a href="project">Projects</a></li>
+                                            {/*<li><a href="blogs">Blogs</a></li>*/}
+                                            {/*<li><a href="project">Projects</a></li>*/}
                                         </ul>
                                     </li>
                                     <li>

@@ -7,10 +7,10 @@ function CommunityLeadTeam(props) {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="section-title section-title--3 text-center mb--30">
-                            <h2 className="title">Skilled Team</h2>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority
-                                have
-                                suffered alteration.</p>
+                            <h2 className="title">Our Skilled Team</h2>
+                            {/*<p>There are many variations of passages of Lorem Ipsum available, but the majority*/}
+                            {/*    have*/}
+                            {/*    suffered alteration.</p>*/}
                         </div>
                     </div>
                 </div>

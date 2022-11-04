@@ -25,11 +25,10 @@ function Hero(props) {
                         <div className="col-lg-12">
                             <div className="inner text-center" >
                                 <h1 className="title theme-gradient" >Learn . Inspire . Innovate</h1>
-                                <p className="description">There are many variations of passages of Lorem Ipsum
-                                    available but the majority have suffered alteration.</p>
+                                {/*<p className="description">There are many variations of passages of Lorem Ipsum*/}
+                                {/*    available but the majority have suffered alteration.</p>*/}
                                 <div className="slide-btn">
-                                    <a className="rn-button-style--2 btn-primary-color" href="contact.html">Contact
-                                        Us</a>
+                                    <a className="rn-button-style--2 btn-primary-color" >Get Started</a>
                                 </div>
                             </div>
                         </div>

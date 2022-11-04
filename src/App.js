@@ -11,10 +11,11 @@ import Teams from "./components/Teams/Teams";
 import Events from "./components/Events/AllEvents/Events";
 import SingleEvent from "./components/Events/SingleEvent/SingleEvent";
 import TechWeek from "./components/TechWeek/TechWeek";
+import {ChakraProvider} from "@chakra-ui/react";
 
 function App() {
   return (
-    <>
+    <ChakraProvider>
       <Router>
         <Routes>
             <Route path='' element={<Home/>}/>
@@ -27,10 +28,10 @@ function App() {
             <Route path='team' element={<Teams/>}/>
             <Route path='events' element={<Events/>}/>
             <Route path='event/:id' element={<SingleEvent/>}/>
-            <Route path='techweek' element={<TechWeek/>}/>
+            <Route path='innovationweek' element={<TechWeek/>}/>
         </Routes>
       </Router>
-    </>
+    </ChakraProvider>
   );
 }
 

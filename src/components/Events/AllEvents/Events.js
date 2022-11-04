@@ -11,7 +11,7 @@ function Events(props) {
                             <div class="breadcrumb-inner pt--100 pt_sm--40 pt_md--50">
                                 <h2 class="title">Upcoming Events</h2>
                                 <ul class="page-list">
-                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="home">Home</a></li>
                                     <li class="current-page">Events</li>
                                 </ul>
                             </div>

@@ -13,9 +13,9 @@ function Partnerships(props) {
                             <li>
                                 <img src="assets/images/brand/teamsete.jpeg" alt="Logo Images"/>
                             </li>
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-02.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
+                            <li>
+                                <img src="assets/images/brand/refugeeyouth.png" alt="Logo Images"/>
+                            </li>
                             {/*<li>*/}
                             {/*    <img src="assets/images/brand/brand-03.png" alt="Logo Images"/>*/}
                             {/*</li>*/}

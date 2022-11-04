@@ -12,10 +12,10 @@ function About(props) {
                         <div className="col-lg-12">
                             <div className="breadcrumb-inner pt--100 pt_sm--40 pt_md--50">
                                 <h2 className="title">About</h2>
-                                <p>Driving technology to Northern Frointer</p>
+                                <p style={{color: '#fefefe', fontSize: '24px'}}>Driving technology to Northern Frontier</p>
                                 <ul className="page-list">
-                                    <li><a href="index.html">Home</a></li>
-                                    <li className="current-page">About</li>
+                                    <li><a href="home">Home</a></li>
+                                    <li className="about">About</li>
                                 </ul>
                             </div>
                         </div>
@@ -37,9 +37,9 @@ function About(props) {
                     <div className="inner">
                         <div className="content-wrapper">
                             <div className="content">
-                                <h4 className="theme-gradient">Find Your Work Now</h4>
+                                <h4 className="theme-gradient">Find Your STEM community Now</h4>
                                 <p>It is important to surround yourself in an environment where you can be comfortable and motivated. When it comes to design and creative thinking, innovators need to have a space that is both open and encouraging</p><a
-                                className="rn-btn btn-white" href="about.html">Get Started</a>
+                                className="rn-btn btn-white" href="https://docs.google.com/forms/d/e/1FAIpQLSfR4otBMjYE77DxuzG4IFTkOwkA4rRIhVnbmjoCJbdqpx0HMQ/viewform?usp=sf_link">Get Started</a>
                             </div>
                         </div>
                         <div className="thumbnail">
@@ -65,9 +65,7 @@ function About(props) {
                                     <div className="tab-pane fade show active" id="tab1" role="tabpanel"
                                          aria-labelledby="tab1-tab">
                                         <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
+                                            <p>NorthernBox targets to achieve the most through leveraging technological innovation provide solutions to the local community.</p>
                                         </div>
                                         <div className="author-info">
                                             <h6><span>Adho Adhi Galgallo </span> - Growth and Programs</h6>
@@ -75,9 +73,7 @@ function About(props) {
                                     </div>
                                     <div className="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
                                         <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
+                                            <p>NorthernBox's provides businesses with the technology they need.</p>
                                         </div>
                                         <div className="author-info">
                                             <h6><span>Diram Bora Guyo </span> - Programs and Partnership</h6>
@@ -85,9 +81,7 @@ function About(props) {
                                     </div>
                                     <div className="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
                                         <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
+                                            <p>NorthernBox is a team that has the knowledge and unique perspective of technology needs.</p>
                                         </div>
                                         <div className="author-info">
                                             <h6><span>Galgallo Wako </span> - Operations and Technical Lead</h6>
@@ -95,19 +89,15 @@ function About(props) {
                                     </div>
                                     <div className="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
                                         <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
+                                            <p>NorthernBox is a team that has the knowledge and unique perspective of technology needs.</p>
                                         </div>
                                         <div className="author-info">
                                             <h6><span>Guyo Abdub </span> - Business Development and Finance</h6>
                                         </div>
                                     </div>
-                                    <div className="tab-pane fade" id="tab6" role="tabpanel" aria-labelledby="tab6-tab">
+                                    <div className="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab-tab">
                                         <div className="inner">
-                                            <p>Aklima The standard chunk of Lorem Ipsum used since the 1500s is
-                                                reproduced
-                                                below for those interested. Sections Bonorum et Malorum original.</p>
+                                            <p>NorthernBox targets to achieve the most through leveraging technological innovation provide solutions to the local community.</p>
                                         </div>
                                         <div className="author-info">
                                             <h6><span>Mustafa Ahmed </span> - Strategy and Marketing</h6>

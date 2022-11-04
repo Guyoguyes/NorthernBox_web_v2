@@ -11,7 +11,7 @@ function Contact(props) {
                         <div className="col-lg-12">
                             <div className="rn-page-title text-center pt--100">
                                 <h2 className="title theme-gradient">Contact With Us</h2>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. </p>
+                                <p>We would Love to hear from You! </p>
                             </div>
                         </div>
                     </div>
@@ -114,48 +114,11 @@ function Contact(props) {
                 {/*// <!-- End Contact Area  -->*/}
                 {/*//*/}
                 {/*// <!-- Start Brand Area -->*/}
-                {/*<div>*/}
-                {/*    <iframe*/}
-                {/*        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8084952365984!2d36.783167299999995!3d-1.2891199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109996536c39%3A0x4eb6d6e1e16b4153!2siHub!5e0!3m2!1sen!2ske!4v1664136819083!5m2!1sen!2ske"*/}
-                {/*        width="600" height="450" style="border:0;" allowFullScreen="" loading="lazy"*/}
-                {/*        referrerPolicy="no-referrer-when-downgrade"></iframe>*/}
-                {/*</div>*/}
-                <div className="rn-brand-area brand-separation rn-section-gap">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-lg-12">
-                                <ul className="brand-style-2">
-                                    <li>
-                                        <img src="assets/images/brand/brand-01.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-02.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-03.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-04.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-05.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-06.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-02.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-03.png" alt="Logo Images"/>
-                                    </li>
-                                    <li>
-                                        <img src="assets/images/brand/brand-04.png" alt="Logo Images"/>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.961089192306!2d37.58153398511964!3d0.3583791976641129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1788662553abb67f%3A0xc9bb1d9f0aaf7321!2sIsiolo%2C%20Kenya!5e0!3m2!1sen!2sus!4v1666382016083!5m2!1sen!2sus"
+                        width="600" height="450" style={{margin: 'auto'}} allowFullScreen="" loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"/>
                 </div>
                 {/*// <!-- End Brand Area -->*/}
             </main>

@@ -17,29 +17,26 @@ function Funfact() {
                     {/*// <!-- Start Single Counterup  -->*/}
                     <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                         <div className="rn-counterup counterup_style--1">
-                            <h5 className="counter count" style={{color: '#fefefe'}}>992</h5>
-                            <p className="description" style={{color: '#fefefe'}}>The standard chunk of Lorem Ipsum used since the 1500s is
-                                reproduced below for those.</p>
+                            <h5 className="counter count" style={{color: '#fefefe'}}>92</h5>
+                            <p className="description" style={{color: '#fefefe'}}>Total Members.</p>
                         </div>
                     </div>
                     {/*// <!-- Start Single Counterup  -->*/}
                     {/*//*/}
                     {/*// <!-- Start Single Counterup  -->*/}
                     <div className="col-lg-4 col-md-4 col-sm-6 col-12">
-                        {/*<div className="rn-counterup counterup_style--1">*/}
-                        {/*    <h5 className="counter count" style={{color: '#fefefe'}}>575</h5>*/}
-                        {/*    <p className="description" style={{color: '#fefefe'}}>The standard chunk of Lorem Ipsum used since the 1500s is*/}
-                        {/*        reproduced below for those.</p>*/}
-                        {/*</div>*/}
+                        <div className="rn-counterup counterup_style--1">
+                            <h5 className="counter count" style={{color: '#fefefe'}}>33</h5>
+                            <p className="description" style={{color: '#fefefe'}}>Skilled and Exprienced Members.</p>
+                        </div>
                     </div>
                     {/*// <!-- Start Single Counterup  -->*/}
                     {/*//*/}
                     {/*// <!-- Start Single Counterup  -->*/}
                     <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                         <div className="rn-counterup counterup_style--1">
-                            <h5 className="counter count" style={{color: '#fefefe'}}>69</h5>
-                            <p className="description" style={{color: '#fefefe'}}>The standard chunk of Lorem Ipsum used since the 1500s is
-                                reproduced below for those.</p>
+                            <h5 className="counter count" style={{color: '#fefefe'}}>8</h5>
+                            <p className="description" style={{color: '#fefefe'}}>Nortern Counties we cover</p>
                         </div>
                     </div>
                     {/*// <!-- Start Single Counterup  -->*/}

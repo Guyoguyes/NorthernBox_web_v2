@@ -1,6 +1,87 @@
 import React from 'react';
 
 function Contact(props) {
+
+    const [name, setName] = 
+
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [ subject1, setSubject1] = useState()
+    const [ message, setMessage] = useState()
+    const [submitBtn, setSubmitBtn] = useState('SEND MESSAGE')
+
+
+    var form_id_js = "javascript_form";
+
+    const data_js = {
+        "access_token": "3v3tu76wy2qdqzwcl2gk8tbq"
+    };
+
+    function js_onSuccess() {
+        // remove this to avoid redirect
+        alert('Message sent successfully. We will get back as soon as possible')
+    }
+
+    function js_onError(error) {
+        // remove this to avoid redirect
+        alert('Failed. Please try again!!')
+    }
+
+    // var sendButton = document.getElementById("js_send");
+
+    function js_send() {
+        // sendButton.value='Sending…';
+        // sendButton.disabled=true;
+        setSubmitBtn('Sending.....')
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+            if (request.readyState == 4 && request.status == 200) {
+                js_onSuccess();
+                setName('')
+                setEmail('')
+                setSubject1('')
+                setMessage('')
+                setSubmitBtn('SEND MESSAGE')
+            } else
+            if(request.readyState == 4) {
+                js_onError(request.response);
+                setName('')
+                setEmail('')
+                setSubject1('')
+                setMessage('')
+                setSubmitBtn('SEND MESSAGE')
+            }
+        };
+
+        var subject = subject1
+        var message = `Name: ${name} \n Email: ${email} \n Mesaage: ${message}`
+        data_js['subject'] = subject;
+        data_js['text'] = message;
+        var params = toParams(data_js);
+
+        request.open("POST", "https://postmail.invotes.com/send", true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+        request.send(params);
+
+        return false;
+    }
+
+    // sendButton.onclick = js_send;
+
+    function toParams(data_js) {
+        var form_data = [];
+        for ( var key in data_js ) {
+            form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+        }
+
+        return form_data.join("&");
+    }
+
+    var js_form = document.getElementById(form_id_js);
+    js_form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
     return (
         <>
             <div className="rn-page-title-area pt--120 pb--190 pb_md--100 pb_sm--100 bg_image bg_image--17"
@@ -87,7 +168,7 @@ function Contact(props) {
                                         </p>
                                     </div>
                                     <div className="form-wrapper">
-                                        <form id="contact-form-active" action="https://rainbowit.net/html/trydo/mail.php"
+                                        <form id="contact-form-active" 
                                               method="post">
                                             <input name="name" type="text" placeholder="Your Name *"/>
                                             <input name="email" type="email" placeholder="Your email *"/>

@@ -23,6 +23,7 @@ function CommunityLeadTeam(props) {
                             </div>
                             <div className="content">
                                 <h4 className="title">Guyo Abdub</h4>
+                                <p className="designation">Business Development and Finance</p>
                                 <p className="designation">Software Engineer</p>
                             </div>
                             <ul className="social-icon">
@@ -39,10 +40,11 @@ function CommunityLeadTeam(props) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/diram.png" alt="Team Images"/>
+                                <img src="assets/images/team/diram.JPEG" alt="Team Images"/>
                             </div>
                             <div className="content">
                                 <h4 className="title">Diram Bora Guyo</h4>
+                                <p className="designation">Programs and Partnership</p>
                                 <p className="designation">Software Engineer</p>
                             </div>
                             <ul className="social-icon">
@@ -59,10 +61,11 @@ function CommunityLeadTeam(props) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/galgallo.png" alt="Team Images"/>
+                                <img src="assets/images/team/galgallo.jpg" alt="Team Images"/>
                             </div>
                             <div className="content">
                                 <h4 className="title">Galgallo Wako</h4>
+                                <p className="designation">Operations and Technical Lead</p>
                                 <p className="designation">Software Engineer</p>
                             </div>
                             <ul className="social-icon">
@@ -73,7 +76,6 @@ function CommunityLeadTeam(props) {
                             </ul>
                         </div>
                     </div>
-                    {/*// <!-- End Single Team Area  -->*/}
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
@@ -81,6 +83,25 @@ function CommunityLeadTeam(props) {
                             </div>
                             <div className="content">
                                 <h4 className="title">Mustafa Ahmed</h4>
+                                <p className="designation">Software Engineer</p>
+                                <p className="designation">Strategy and Marketing</p>
+                            </div>
+                            <ul className="social-icon">
+                                <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-12">
+                        <div className="team">
+                            <div className="thumbnail">
+                                <img src="assets/images/team/adho.jpg" alt="Team Images"/>
+                            </div>
+                            <div className="content">
+                                <h4 className="title">Adho Adhi Galgallo</h4>
+                                <p className="designation">Growth and Programs</p>
                                 <p className="designation">Software Engineer</p>
                             </div>
                             <ul className="social-icon">

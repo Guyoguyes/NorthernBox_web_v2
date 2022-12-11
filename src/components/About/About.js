@@ -126,7 +126,7 @@ function About(props) {
                                                 type="button" aria-controls="tab2" aria-selected="false">
                                             <div className="testimonial-thumbnai">
                                                 <div className="thumb">
-                                                    <img src="assets/images/team/diram.png"
+                                                    <img src="assets/images/team/diram.JPEG"
                                                          alt="Testimonial Images"/>
                                                 </div>
                                             </div>
@@ -138,7 +138,7 @@ function About(props) {
                                                 type="button" aria-controls="tab3" aria-selected="false">
                                             <div className="testimonial-thumbnai">
                                                 <div className="thumb">
-                                                    <img src="assets/images/team/galgallo.png"
+                                                    <img src="assets/images/team/galgallo.jpg"
                                                          alt="Testimonial Images"/>
                                                 </div>
                                             </div>

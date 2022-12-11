@@ -41,7 +41,7 @@ function Navbar(props) {
 
                         </div>
                         <div className="header-btn">
-                            <a className="rn-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfR4otBMjYE77DxuzG4IFTkOwkA4rRIhVnbmjoCJbdqpx0HMQ/viewform?usp=sf_link">
+                            <a className="rn-btn" href="membership">
                                 <span>Join</span>
                             </a>
                         </div>

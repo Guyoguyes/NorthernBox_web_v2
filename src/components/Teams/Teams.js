@@ -35,6 +35,7 @@ function Teams(props) {
                                     </div>
                                     <div class="content">
                                         <h4 class="title">Guyo Abdub</h4>
+                                        <p className="designation">Business Development and Finance</p>
                                         <p class="designation">Software Engineer</p>
                                     </div>
                                     <ul class="social-icon">
@@ -51,10 +52,11 @@ function Teams(props) {
                             <div class="col-lg-4 col-md-6 col-12">
                                 <div class="team">
                                     <div class="thumbnail">
-                                        <img src="assets/images/team/diram.png" alt="Team Images" />
+                                        <img src="assets/images/team/diram.JPEG" alt="Team Images" />
                                     </div>
                                     <div class="content">
                                         <h4 class="title">Diram Bora Guyo</h4>
+                                        <p class="designation">Programs and Partnership</p>
                                         <p class="designation">Software Engineer</p>
                                     </div>
                                     <ul class="social-icon">
@@ -71,10 +73,11 @@ function Teams(props) {
                             <div class="col-lg-4 col-md-6 col-12">
                                 <div class="team">
                                     <div class="thumbnail">
-                                        <img src="assets/images/team/galgallo.png" alt="Team Images" />
+                                        <img src="assets/images/team/galgallo.jpg" alt="Team Images" />
                                     </div>
                                     <div class="content">
                                         <h4 class="title">Galgallo Wako</h4>
+                                        <p class="designation">Operations and Technical Lead</p>
                                         <p class="designation">Software Engineer</p>
                                     </div>
                                     <ul class="social-icon">
@@ -93,6 +96,7 @@ function Teams(props) {
                                     <div className="content">
                                         <h4 className="title">Mustafa Ahmed</h4>
                                         <p className="designation">Software Engineer</p>
+                                        <p className="designation">Strategy and Marketing</p>
                                     </div>
                                     <ul className="social-icon">
                                         <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
@@ -109,6 +113,7 @@ function Teams(props) {
                                     </div>
                                     <div className="content">
                                         <h4 className="title">Adho Adhi Galgallo</h4>
+                                        <p className="designation">Growth and Programs</p>
                                         <p className="designation">Software Engineer</p>
                                     </div>
                                     <ul className="social-icon">

@@ -12,6 +12,7 @@ import Events from "./components/Events/AllEvents/Events";
 import SingleEvent from "./components/Events/SingleEvent/SingleEvent";
 import TechWeek from "./components/TechWeek/TechWeek";
 import {ChakraProvider} from "@chakra-ui/react";
+import Membership from "./components/Membership/Membership";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path='events' element={<Events/>}/>
             <Route path='event/:id' element={<SingleEvent/>}/>
             <Route path='innovationweek' element={<TechWeek/>}/>
+            <Route path='membership' element={<Membership/>}/>
         </Routes>
       </Router>
     </ChakraProvider>

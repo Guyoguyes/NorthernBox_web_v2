@@ -1,8 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 function Contact(props) {
 
-    const [name, setName] = 
 
     const [name, setName] = useState()
     const [email, setEmail] = useState()

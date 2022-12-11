@@ -14,7 +14,7 @@ function ProgramAreas(props) {
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="section-title text-center mb--30">
-                                <h2>Our Program Areas</h2>
+                                <h2 class="title">Our Program Areas</h2>
                                 <p>The Community is currently undertaking several projects starting form STEM education to
                                 startups and innovation incubation</p>
                             </div>

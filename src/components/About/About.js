@@ -6,12 +6,12 @@ import Partnerships from "../Partnerships/Partnerships";
 function About(props) {
     return (
         <div>
-            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6">
+            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(assets/images/bg/membership.jpeg)'}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="breadcrumb-inner pt--100 pt_sm--40 pt_md--50">
-                                <h2 className="title">About</h2>
+                                <h2 className="title" style={{fontSize: '72px'}}>About</h2>
                                 <p style={{color: '#fefefe', fontSize: '24px'}}>Driving technology to Northern Frontier</p>
                                 <ul className="page-list">
                                     <li><a href="home">Home</a></li>

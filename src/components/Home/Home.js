@@ -26,7 +26,7 @@ function Home() {
                                 <p>NBC embraces the diversity, equality, equity, and uniqueness of members, and the
                                     communities that we serve by committing to be an anti-tribal community.</p>
                                 <div className="service-btn"><a className="btn-transparent rn-btn-dark"
-                                                                href="https://rainbowit.net/service"><span
+                                                                href="membership"><span
                                     className="text">Get Started</span></a></div>
                             </div>
                         </div>

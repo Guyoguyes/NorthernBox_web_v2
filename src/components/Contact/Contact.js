@@ -6,7 +6,7 @@ function Contact(props) {
     const [name, setName] = useState()
     const [email, setEmail] = useState()
     const [ subject1, setSubject1] = useState()
-    const [ message, setMessage] = useState()
+    const [ message1, setMessage] = useState()
     const [submitBtn, setSubmitBtn] = useState('SEND MESSAGE')
 
 
@@ -23,19 +23,21 @@ function Contact(props) {
 
     function js_onError(error) {
         // remove this to avoid redirect
-        alert('Failed. Please try again!!')
+        alert(`Failed. ${error} Please try again!!`)
     }
 
     // var sendButton = document.getElementById("js_send");
 
-    function js_send() {
+    function js_send(e) {
+        e.preventDefault()
         // sendButton.value='Sending…';
         // sendButton.disabled=true;
         setSubmitBtn('Sending.....')
         var request = new XMLHttpRequest();
         request.onreadystatechange = function() {
             if (request.readyState == 4 && request.status == 200) {
-                js_onSuccess();
+                alert('Message sent successfully. We will get back as soon as possible')
+                console.log('EMAIL SUCCESSS')
                 setName('')
                 setEmail('')
                 setSubject1('')
@@ -43,7 +45,8 @@ function Contact(props) {
                 setSubmitBtn('SEND MESSAGE')
             } else
             if(request.readyState == 4) {
-                js_onError(request.response);
+                alert(`Failed. ${request.response} Please try again!!`)
+                console.log(`EMAIL FAILED: ${request.response}`)
                 setName('')
                 setEmail('')
                 setSubject1('')
@@ -53,7 +56,7 @@ function Contact(props) {
         };
 
         var subject = subject1
-        var message = `Name: ${name} \n Email: ${email} \n Mesaage: ${message}`
+        var message = `Name: ${name} \n Email: ${email} \n Mesaage: ${message1}`
         data_js['subject'] = subject;
         data_js['text'] = message;
         var params = toParams(data_js);
@@ -77,10 +80,10 @@ function Contact(props) {
         return form_data.join("&");
     }
 
-    var js_form = document.getElementById(form_id_js);
-    js_form.addEventListener("submit", function (e) {
-        e.preventDefault();
-    });
+    // var js_form = document.getElementById(form_id_js);
+    // js_form.addEventListener("submit", function (e) {
+    //     e.preventDefault();
+    // });
     return (
         <>
             <div className="rn-page-title-area pt--120 pb--190 pb_md--100 pb_sm--100 bg_image bg_image--17"
@@ -90,7 +93,7 @@ function Contact(props) {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="rn-page-title text-center pt--100">
-                                <h2 className="title theme-gradient">Contact With Us</h2>
+                                <h2 className="title theme-gradient" style={{fontSize: '72px', fontStyle:'bold'}}>Contact With Us</h2>
                                 <p>We would Love to hear from You! </p>
                             </div>
                         </div>
@@ -126,8 +129,8 @@ function Contact(props) {
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Email Address</h4>
-                                        <p><a href="mailto:admin@gmail.com">info@northernbox.co.ke</a></p>
-                                        <p><a href="mailto:example@gmail.com">contact@northernbox.co.ke</a></p>
+                                        <p><a href="mailto:admin@gmail.com">info@northernboxcommunity.com</a></p>
+                                        <p><a href="mailto:example@gmail.com">contact@northernboxcommunity.com</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -160,21 +163,21 @@ function Contact(props) {
                                 <div className="col-lg-6 order-2 order-lg-1">
                                     <div className="section-title text-start mb--50 mb_sm--30 mb_md--30">
                                         <h2 className="title">Contact Us.</h2>
-                                        <p className="description">I am available for freelance work. Connect with me via
+                                        <p className="description">We are available to talk. Connect with me via
                                             phone:
-                                            <a href="tel:+254729753530">+254 729 753 530</a> or email:
-                                            <a href="mailto:contact@northernbox.co.k">contact@northernbox.co.k</a>
+                                            <a href="tel:+254729753530">+254 729 753 530/ +254 723 212 256</a> or email:
+                                            <a href="mailto:contact@northernbox.co.k">contact@northernboxcommunity.com</a>
                                         </p>
                                     </div>
                                     <div className="form-wrapper">
-                                        <form id="contact-form-active" 
-                                              method="post">
-                                            <input name="name" type="text" placeholder="Your Name *"/>
-                                            <input name="email" type="email" placeholder="Your email *"/>
-                                            <input name="subject" type="text" placeholder="Write a Subject"/>
-                                            <textarea name="message" placeholder="Your Message"></textarea>
+                                        <form id="contact-form-active" onSubmit={js_send}
+                                              >
+                                            <input name="name" type="text" value={name} onChange={(e) =>setName(e.target.value)} placeholder="Your Name *"/>
+                                            <input name="email" type="email" value={email} onChange={(e) =>setEmail(e.target.value)} placeholder="Your email *"/>
+                                            <input name="subject" value={subject1} onChange={(e) => setSubject1(e.target.value)} type="text" placeholder="Write a Subject"/>
+                                            <textarea name="message" value={message1} onChange={(e) => setMessage(e.target.value)} placeholder="Your Message"></textarea>
                                             <button type="submit" className="rn-button-style--2 btn_solid">
-                                                <span>Send message</span>
+                                                <span>{submitBtn}</span>
                                             </button>
                                         </form>
                                         <div className="form-output">
@@ -194,7 +197,7 @@ function Contact(props) {
                 {/*// <!-- End Contact Area  -->*/}
                 {/*//*/}
                 {/*// <!-- Start Brand Area -->*/}
-                <div>
+                <div style={{marginBottom: '60px'}}>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.961089192306!2d37.58153398511964!3d0.3583791976641129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1788662553abb67f%3A0xc9bb1d9f0aaf7321!2sIsiolo%2C%20Kenya!5e0!3m2!1sen!2sus!4v1666382016083!5m2!1sen!2sus"
                         width="600" height="450" style={{margin: 'auto'}} allowFullScreen="" loading="lazy"

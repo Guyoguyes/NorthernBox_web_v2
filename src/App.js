@@ -13,6 +13,7 @@ import SingleEvent from "./components/Events/SingleEvent/SingleEvent";
 import TechWeek from "./components/TechWeek/TechWeek";
 import {ChakraProvider} from "@chakra-ui/react";
 import Membership from "./components/Membership/Membership";
+import NBCWave from "./components/NBCWAVE/NBCWave";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             <Route path='event/:id' element={<SingleEvent/>}/>
             <Route path='innovationweek' element={<TechWeek/>}/>
             <Route path='membership' element={<Membership/>}/>
+            <Route path='nbcwave' element={<NBCWave/>}/>
         </Routes>
       </Router>
     </ChakraProvider>

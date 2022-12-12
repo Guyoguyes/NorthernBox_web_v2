@@ -10,6 +10,9 @@ function Partnerships(props) {
                             <h2>Our Partners</h2>
                         </div>
                         <ul className="brand-style-2">
+                        <li>
+                                <img src="assets/images/brand/mwit.jpg" alt="Logo Images"/>
+                            </li>
                             <li>
                                 <img src="assets/images/brand/teamsete.jpeg" alt="Logo Images"/>
                             </li>

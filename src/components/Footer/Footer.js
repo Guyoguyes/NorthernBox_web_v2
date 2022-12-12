@@ -10,7 +10,7 @@ function Footer() {
                             <div className="inner">
                                 <span>Ready To Do This</span>
                                 <h2>Let's get <br/> to work</h2>
-                                <a className="rn-button-style--2" href="contact.html">
+                                <a className="rn-button-style--2" href="contact">
                                     <span>Contact Us</span>
                                 </a>
                             </div>
@@ -39,10 +39,10 @@ function Footer() {
 
                                         <div className="social-share-inner">
                                             <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
-                                                <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                                <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                                                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                                <li><a href="#"><i className="fab fa-instagram"></i></a></li>
+                                                <li><a href="https://m.facebook.com/groups/2058420990978109/?ref=group_browse"><i className="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="https://www.linkedin.com/company/northernbox/"><i className="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="https://twitter.com/NorthernBox_"><i className="fab fa-twitter"></i></a></li>
+                                                <li><a href="https://www.instagram.com/northernboxcommunity/"><i className="fab fa-instagram"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -50,7 +50,7 @@ function Footer() {
 
                                 <div className="col-lg-12">
                                     <div className="copyright-text">
-                                        <p>Copyright © 2022 <a href="northernboxcommunity.com">NorthernBox Community</a>. All Rights Reserved.</p>
+                                        <p>Copyright © 2022 <a href="home">NorthernBox Community</a>. All Rights Reserved.</p>
                                     </div>
                                 </div>
                             </div>

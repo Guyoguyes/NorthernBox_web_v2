@@ -4,6 +4,7 @@ import CommunityLeadTeam from "../CommunityLeadTeam/CommunityLeadTeam";
 import Partnerships from "../Partnerships/Partnerships";
 
 function About(props) {
+    var title = 'Our Skilled Team'
     return (
         <div>
             <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(assets/images/bg/membership.jpeg)'}}>

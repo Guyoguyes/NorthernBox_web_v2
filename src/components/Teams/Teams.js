@@ -1,4 +1,5 @@
 import React from 'react';
+import CommunityLeadTeam from "../CommunityLeadTeam/CommunityLeadTeam";
 
 function Teams(props) {
     return (
@@ -24,110 +25,7 @@ function Teams(props) {
             <main class="page-wrapper">
 
                 {/*// <!-- Start team Area  -->*/}
-                <div class="rn-team-area rn-section-gap bg_color--1">
-                    <div class="container">
-                        <div class="row mt_dec--30">
-                            {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="team">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/guyo.png" alt="Team Images" />
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title">Guyo Abdub</h4>
-                                        <p className="designation">Business Development and Finance</p>
-                                        <p class="designation">Software Engineer</p>
-                                    </div>
-                                    <ul class="social-icon">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/*// <!-- End Single Team Area  -->*/}
-                            {/*//*/}
-                            {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="team">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/diram.JPEG" alt="Team Images" />
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title">Diram Bora Guyo</h4>
-                                        <p class="designation">Programs and Partnership</p>
-                                        <p class="designation">Software Engineer</p>
-                                    </div>
-                                    <ul class="social-icon">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/*// <!-- End Single Team Area  -->*/}
-                            {/*//*/}
-                            {/*// <!-- Start Single Team Area  -->*/}
-                            <div class="col-lg-4 col-md-6 col-12">
-                                <div class="team">
-                                    <div class="thumbnail">
-                                        <img src="assets/images/team/galgallo.jpg" alt="Team Images" />
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title">Galgallo Wako</h4>
-                                        <p class="designation">Operations and Technical Lead</p>
-                                        <p class="designation">Software Engineer</p>
-                                    </div>
-                                    <ul class="social-icon">
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img src="assets/images/team/mustafa.png" alt="Team Images"/>
-                                    </div>
-                                    <div className="content">
-                                        <h4 className="title">Mustafa Ahmed</h4>
-                                        <p className="designation">Software Engineer</p>
-                                        <p className="designation">Strategy and Marketing</p>
-                                    </div>
-                                    <ul className="social-icon">
-                                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-lg-4 col-md-6 col-12">
-                                <div className="team">
-                                    <div className="thumbnail">
-                                        <img src="assets/images/team/adho.jpg" alt="Team Images"/>
-                                    </div>
-                                    <div className="content">
-                                        <h4 className="title">Adho Adhi Galgallo</h4>
-                                        <p className="designation">Growth and Programs</p>
-                                        <p className="designation">Software Engineer</p>
-                                    </div>
-                                    <ul className="social-icon">
-                                        <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/*// <!-- End Single Team Area  -->*/}
-                        </div>
-                    </div>
-                </div>
+                <CommunityLeadTeam />
                 {/*// <!-- Start team Area  -->*/}
                 {/*//*/}
                 {/*// <!-- Start team Area  -->*/}

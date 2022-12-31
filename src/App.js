@@ -14,12 +14,14 @@ import TechWeek from "./components/TechWeek/TechWeek";
 import {ChakraProvider} from "@chakra-ui/react";
 import Membership from "./components/Membership/Membership";
 import NBCWave from "./components/NBCWAVE/NBCWave";
+import NotFound from './components/404/NotFound';
 
 function App() {
   return (
     <ChakraProvider>
       <Router>
         <Routes>
+        <Route path="*" element={<NotFound />} />
             <Route path='' element={<Home/>}/>
             <Route path='home' element={<Home/>}/>
             <Route path='about' element={<About/>}/>

@@ -21,7 +21,7 @@ function NBCWave(){
         mm = String(today.getMonth() + 1).padStart(2, "0"),
         yyyy = today.getFullYear(),
         nextYear = "2023",
-        dayMonth = "01/01/",
+        dayMonth = "01/21/",
         launchDate = dayMonth + yyyy;
     //
     today = mm + "/" + dd + "/" + yyyy;
@@ -63,7 +63,7 @@ function NBCWave(){
                 </div>
             </div>
             <main className="page-wrapper">
-
+                <span>Heee</span>
                 <div className="container1">
                     <h1 id="headline">Countdown to NBC WAVE Launch</h1>
                     <div id="countdown">

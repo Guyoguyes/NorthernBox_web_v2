@@ -33,8 +33,8 @@ function Footer() {
                                     <div className="footer-widget">
                                         <h4>Say Hello</h4>
                                         <ul className="ft-link">
-                                            <li><a href="mailto:hi@northernboxcommunity.com">hi@northernboxcommunity.com</a></li>
-                                            <li><a href="mailto:contact@northernboxcommunity.com">contact@northernboxcommunity.com</a></li>
+                                            <li><a href="mailto:hi@northernbox.org">hi@northernbox.org</a></li>
+                                            <li><a href="mailto:contact@northernbox.org">contact@northernbox.org</a></li>
                                         </ul>
 
                                         <div className="social-share-inner">
@@ -50,7 +50,7 @@ function Footer() {
 
                                 <div className="col-lg-12">
                                     <div className="copyright-text">
-                                        <p>Copyright © 2022 <a href="home">NorthernBox Community</a>. All Rights Reserved.</p>
+                                        <p>Copyright © 2023 <a href="home">NorthernBox Community</a>. All Rights Reserved.</p>
                                     </div>
                                 </div>
                             </div>

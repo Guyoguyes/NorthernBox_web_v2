@@ -22,9 +22,9 @@ function Navbar(props) {
                                     <li>
                                         <a href="about">About</a>
                                     </li>
-                                    <li className="has-droupdown">
+                                    {/* <li className="has-droupdown">
                                         <a href="team">Team</a>
-                                    </li>
+                                    </li> */}
                                     <li className="has-droupdown">
                                         <a> Activities</a>
                                         <ul className="submenu" style={{width: '50px'}}>

@@ -12,7 +12,7 @@ const NotFound = () =>{
                                 <h3 class="sub-title">Page not found</h3><span>The page you were looking for could not
                                     be found.</span>
                                 <div class="error-button">
-                                    <a class="rn-button-style--2 btn_solid" href="https://northernboxcommunity.com/">Back To Homepage</a>
+                                    <a class="rn-button-style--2 btn_solid" href="https://northernbox.org/">Back To Homepage</a>
                                 </div>
                             </div>
                             <img src="assets/images/bg/oops.png" style={{transform: 'rotate(-44.79deg)'}} />

@@ -129,8 +129,8 @@ function Contact(props) {
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Email Address</h4>
-                                        <p><a href="mailto:admin@gmail.com">info@northernboxcommunity.com</a></p>
-                                        <p><a href="mailto:example@gmail.com">contact@northernboxcommunity.com</a></p>
+                                        <p><a href="mailto:admin@gmail.com">info@northernbox.org</a></p>
+                                        <p><a href="mailto:example@gmail.com">contact@northernbox.org</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@ function Contact(props) {
                                         <p className="description">We are available to talk. Connect with me via
                                             phone:
                                             <a href="tel:+254729753530">+254 729 753 530/ +254 723 212 256</a> or email:
-                                            <a href="mailto:contact@northernbox.co.k">contact@northernboxcommunity.com</a>
+                                            <a href="mailto:contact@northernbox.co.k">contact@northernbox.org</a>
                                         </p>
                                     </div>
                                     <div className="form-wrapper">

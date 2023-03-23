@@ -59,7 +59,7 @@ function CommunityLeadTeam(prop) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/galgallo.jpg" alt="Team Images"/>
+                                <img src="assets/images/team/galgallo.png" alt="Team Images"/>
                             </div>
                             <div className="content">
                                 <h4 className="title">Galgallo Wako</h4>
@@ -75,7 +75,7 @@ function CommunityLeadTeam(prop) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/mustafa.png" alt="Team Images"/>
+                                <img src="assets/images/team/mustafa.jpeg" alt="Team Images"/>
                             </div>
                             <div className="content">
                                 <h4 className="title">Mustafa Ahmed</h4>

@@ -6,9 +6,9 @@ function Navbar(props) {
             <header className="header-area formobile-menu header--transparent black-logo-version ">
                 <div className="header-wrapper" id="header-wrapper">
                     <div className="header-left">
-                        <div className="logo">
+                        <div className="logo" style={{outline: '1px solid red', width: '300px', height: '100px'}}>
                             <a href="index.html">
-                                <img src="assets/images/nbc.png" alt="NorthernBox Logo" />
+                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1685890010/NorthernBox_Logo-1-removebg-preview_e4d9et.png" alt="NorthernBox Logo" />
                             </a>
                         </div>
                     </div>

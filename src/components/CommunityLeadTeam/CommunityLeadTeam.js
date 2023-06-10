@@ -19,7 +19,7 @@ function CommunityLeadTeam(prop) {
                     <div className="col-lg-4 col-md-6 col-12">
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="assets/images/team/guyo.png" alt="Team Images"/>
+                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1685898945/WhatsApp_Image_2023-06-03_at_10.06.14_AM_h3n3gu.jpg" alt="Team Images"/>
                             </div>
                             <div className="content">
                                 <h4 className="title">Guyo Abdub</h4>

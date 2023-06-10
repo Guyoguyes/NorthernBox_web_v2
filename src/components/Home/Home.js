@@ -102,7 +102,7 @@ function Home() {
             {/*// <!-- End Blog Area  -->*/}
             {/*//*/}
             {/*// <!-- Start Brand Area -->*/}
-            <Partnerships />
+            {/* <Partnerships /> */}
             {/*// <!-- End Brand Area -->*/}
 
         </main>

@@ -12,7 +12,7 @@ root.render(
       <div className="main-page">
           <Navbar />
           <App />
-          <Footer/>
+          {/* <Footer/> */}
       </div>
 
   </React.StrictMode>

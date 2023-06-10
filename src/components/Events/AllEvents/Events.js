@@ -28,6 +28,60 @@ function Events(props) {
                     <div class="container">
                         <div class="gallery-wrapper gallery-grid row mt_dec--60" id="animated-thumbnials">
 
+                        <a className="item-portfolio-static gallery col-lg-6 col-md-6"
+                               href="assets/images/portfolio/Fqr4kFnWYAEFeLv.jpeg" >
+                                <div className="portfolio-static">
+                                    <div className="thumbnail-inner">
+                                        <div className="thumbnail">
+                                            <img src="assets/images/portfolio/Fqr4kFnWYAEFeLv.jpeg"
+                                                 alt="Portfolio Images" style={{height: '500px', aspectRatio: '16/9'}}/>
+                                        </div>
+                                    </div>
+                                    {/*<div className="content">*/}
+                                    {/*    <div className="inner">*/}
+                                    {/*        <p>Web Design</p>*/}
+                                    {/*        <h4>Mobile App landing Design</h4>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
+                                </div>
+                            </a>
+
+                        <a className="item-portfolio-static gallery col-lg-6 col-md-6"
+                               href="assets/images/portfolio/FqR1eGhWwAEvUWR.jpeg" >
+                                <div className="portfolio-static">
+                                    <div className="thumbnail-inner">
+                                        <div className="thumbnail">
+                                            <img src="assets/images/portfolio/FqR1eGhWwAEvUWR.jpeg"
+                                                 alt="Portfolio Images" style={{height: '500px'}}/>
+                                        </div>
+                                    </div>
+                                    {/*<div className="content">*/}
+                                    {/*    <div className="inner">*/}
+                                    {/*        <p>Web Design</p>*/}
+                                    {/*        <h4>Mobile App landing Design</h4>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
+                                </div>
+                            </a>
+
+                        <a className="item-portfolio-static gallery col-lg-6 col-md-6"
+                               href="assets/images/portfolio/Fifj16yXwAQSWzG.jpeg" >
+                                <div className="portfolio-static">
+                                    <div className="thumbnail-inner">
+                                        <div className="thumbnail">
+                                            <img src="assets/images/portfolio/Fifj16yXwAQSWzG.jpeg"
+                                                 alt="Portfolio Images" style={{height: '500px'}}/>
+                                        </div>
+                                    </div>
+                                    {/*<div className="content">*/}
+                                    {/*    <div className="inner">*/}
+                                    {/*        <p>Web Design</p>*/}
+                                    {/*        <h4>Mobile App landing Design</h4>*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
+                                </div>
+                            </a>
+
                             <a className="item-portfolio-static gallery col-lg-6 col-md-6"
                                href="assets/images/portfolio/meet3.jpg" >
                                 <div className="portfolio-static">

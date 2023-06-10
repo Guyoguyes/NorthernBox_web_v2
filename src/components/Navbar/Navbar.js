@@ -6,9 +6,10 @@ function Navbar(props) {
             <header className="header-area formobile-menu header--transparent black-logo-version ">
                 <div className="header-wrapper" id="header-wrapper">
                     <div className="header-left">
-                        <div className="logo" style={{outline: '1px solid red', width: '300px', height: '100px'}}>
+                        <div className="logo" style={{width: '300px', }}>
                             <a href="index.html">
-                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1685890010/NorthernBox_Logo-1-removebg-preview_e4d9et.png" alt="NorthernBox Logo" />
+                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1685890010/NorthernBox_Logo-1-removebg-preview_e4d9et.png" alt="NorthernBox Logo" 
+                                    style={{width: '300px', height: '100px', bottom: '50px'}}/>
                             </a>
                         </div>
                     </div>
@@ -29,7 +30,7 @@ function Navbar(props) {
                                         <a> Activities</a>
                                         <ul className="submenu" style={{width: '50px'}}>
                                             <li><a href="events">Events</a></li>
-                                            <li><a href="nbcwave">NBC Wave</a></li>
+                                            {/* <li><a href="nbcwave">NBC Wave</a></li> */}
                                             {/*<li><a href="blogs">Blogs</a></li>*/}
                                             {/*<li><a href="project">Projects</a></li>*/}
                                         </ul>
@@ -48,7 +49,12 @@ function Navbar(props) {
                         </div>
                         <div className="header-btn">
                             <a className="rn-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdicIssy67YAg0O9iMGKp29BomtClkOGgYfSD9UWokHVHudyw/viewform?usp=sf_link">
-                                <span>Volunteer</span>
+                                <span>Hire Talents</span>
+                            </a>
+                        </div>
+                        <div className="header-btn">
+                            <a className="rn-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSdicIssy67YAg0O9iMGKp29BomtClkOGgYfSD9UWokHVHudyw/viewform?usp=sf_link">
+                                <span>Donate</span>
                             </a>
                         </div>
                         <div className="humberger-menu d-block d-lg-none pl--20">

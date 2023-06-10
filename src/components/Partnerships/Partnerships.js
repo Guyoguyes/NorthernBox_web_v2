@@ -11,6 +11,9 @@ function Partnerships(props) {
                         </div>
                         <ul className="brand-style-2">
                         <li>
+                                <img src="assets/images/brand/holby.jpg" alt="Logo Images"/>
+                            </li>
+                        <li>
                                 <img src="assets/images/brand/mwit.jpg" alt="Logo Images"/>
                             </li>
                             <li>

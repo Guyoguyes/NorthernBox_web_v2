@@ -1,6 +1,56 @@
 import React from 'react';
 
-function CommunityLeadTeam(prop) {
+function CommunityLeadTeam() {
+
+    const items = [
+       
+        {
+            image: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1686425055/IMG_8709_x4lh3v.jpg',
+            name: 'Diram Bora Guyo',
+            designation:'Programs and Partnership',
+            position: 'Software Engineer',
+            linkedIn: 'https://www.linkedin.com/in/diram-b-guyo-8bb9b1174',
+            instagram: 'https://instagram.com/codingdee_?igshid=YmMyMTA2M2Y=',
+            twitter: 'https://twitter.com/Diram_B?t=lm_w5VTOFBt2v8xFg3J2kQ&s=09'
+        },
+        {
+            image: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1685898945/WhatsApp_Image_2023-06-03_at_10.06.14_AM_h3n3gu.jpg',
+            name: 'Guyo Abdub',
+            designation:'Strategy and Market',
+            position: 'Software Engineer',
+            linkedIn: 'https://www.linkedin.com/in/guyo-abdub/',
+            instagram: '',
+            twitter: 'https://twitter.com/guyoguyes'
+        },
+        {
+            image: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1686427526/IMG_8721_vssdqx.jpg',
+            name: 'Adho Adhi Galgallo',
+            designation:'Growth and Programs',
+            position: 'Software Engineer',
+            linkedIn: 'https://www.linkedin.com/in/adho-adhi-galgallo-575aa6182/',
+            instagram: '',
+            twitter: ''
+        },
+        {
+            image: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1686427697/IMG_8704_ayd4hw.jpg',
+            name: 'Galgallo Wako',
+            designation:'Operations and Technical Lead',
+            position: 'Data Scientist',
+            linkedIn: 'https://www.linkedin.com/in/galgallo-wako-b4726b90',
+            instagram: '',
+            twitter: 'https://twitter.com/wakogalgallow'
+        },
+        {
+            image: '',
+            name: 'Mustafa Ahmed',
+            designation:'Business Development and Finance',
+            position: 'Data Scientist',
+            linkedIn: 'https://www.linkedin.com/in/mustafa-ahmed-18a28011a/',
+            instagram: '',
+            twitter: 'https://twitter.com/mussys_mustapha'
+        },
+    ]
+
     return (
         <div className="rn-team-area rn-section-gap bg_color--1">
             <div className="container">
@@ -16,96 +66,32 @@ function CommunityLeadTeam(prop) {
                 </div>
                 <div className="row">
                     {/*// <!-- Start Single Team Area  -->*/}
-                    <div className="col-lg-4 col-md-6 col-12">
+                    {items?.map((item, key) =>{
+                        return(
+                            <>
+                                 <div className="col-lg-4 col-md-6 col-12" key={key}>
                         <div className="team">
                             <div className="thumbnail">
-                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1685898945/WhatsApp_Image_2023-06-03_at_10.06.14_AM_h3n3gu.jpg" alt="Team Images"/>
+                                <img src={item.image} alt="Team Images" style={{height: '550px', objectFit: 'cover'}}/>
                             </div>
                             <div className="content">
-                                <h4 className="title">Guyo Abdub</h4>
-                                <p className="designation">Business Development and Finance</p>
-                                <p className="designation">Software Engineer</p>
+                                <h4 className="title">{item.name}</h4>
+                                <p className="designation">{item.designation}</p>
+                                <p className="designation">{item.position}</p>
                             </div>
                             <ul className="social-icon">
-                                <li><a href="https://www.linkedin.com/in/guyo-abdub/"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://twitter.com/guyoguyes"><i className="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
+                                <li><a href={item.linkedIn}><i className="fab fa-linkedin-in"></i></a></li>
+                                <li><a href={item.twitter}><i className="fab fa-twitter"></i></a></li>
+                                <li><a href={item.instagram}><i className="fab fa-instagram-square"></i></a></li>
                             </ul>
                         </div>
                     </div>
-                    {/*// <!-- End Single Team Area  -->*/}
-                    {/*//*/}
-                    {/*// <!-- Start Single Team Area  -->*/}
-                    <div className="col-lg-4 col-md-6 col-12">
-                        <div className="team">
-                            <div className="thumbnail">
-                                <img src="assets/images/team/diram.JPEG" alt="Team Images"/>
-                            </div>
-                            <div className="content">
-                                <h4 className="title">Diram Bora Guyo</h4>
-                                <p className="designation">Programs and Partnership</p>
-                                <p className="designation">Software Engineer</p>
-                            </div>
-                            <ul className="social-icon">
-                                <li><a href="https://www.linkedin.com/in/diram-b-guyo-8bb9b1174"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://twitter.com/Diram_B?t=lm_w5VTOFBt2v8xFg3J2kQ&s=09"><i className="fab fa-twitter"></i></a></li>
-                                <li><a href="https://instagram.com/codingdee_?igshid=YmMyMTA2M2Y="><i className="fab fa-instagram-square"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    {/*// <!-- End Single Team Area  -->*/}
-                    {/*//*/}
-                    {/*// <!-- Start Single Team Area  -->*/}
-                    <div className="col-lg-4 col-md-6 col-12">
-                        <div className="team">
-                            <div className="thumbnail">
-                                <img src="assets/images/team/galgallo.png" alt="Team Images"/>
-                            </div>
-                            <div className="content">
-                                <h4 className="title">Galgallo Wako</h4>
-                                <p className="designation">Operations and Technical Lead</p>
-                                <p className="designation">Software Engineer</p>
-                            </div>
-                            <ul className="social-icon">
-                                <li><a href="https://www.linkedin.com/in/galgallo-wako-b4726b90/"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://twitter.com/wakogalgallow"><i className="fab fa-twitter"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-12">
-                        <div className="team">
-                            <div className="thumbnail">
-                                <img src="assets/images/team/mustafa.jpeg" alt="Team Images"/>
-                            </div>
-                            <div className="content">
-                                <h4 className="title">Mustafa Ahmed</h4>
-                                <p className="designation">Software Engineer</p>
-                                <p className="designation">Strategy and Marketing</p>
-                            </div>
-                            <ul className="social-icon">
-                                <li><a href="https://www.linkedin.com/in/mustafa-ahmed-18a28011a/"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://twitter.com/mussys_mustapha"><i className="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="col-lg-4 col-md-6 col-12">
-                        <div className="team">
-                            <div className="thumbnail">
-                                <img src="assets/images/team/adho.jpg" alt="Team Images"/>
-                            </div>
-                            <div className="content">
-                                <h4 className="title">Adho Adhi Galgallo</h4>
-                                <p className="designation">Growth and Programs</p>
-                                <p className="designation">Software Engineer</p>
-                            </div>
-                            <ul className="social-icon">
-                                <li><a href="https://www.linkedin.com/in/adho-adhi-galgallo-575aa6182/"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i className="fab fa-instagram-square"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                            </>
+                        )
+                       
+                    })}
+                    
+
                 </div>
             </div>
         </div>

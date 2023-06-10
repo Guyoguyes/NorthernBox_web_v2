@@ -14,14 +14,14 @@ function AboutComponent(props) {
                         <div className="col-lg-7 col-md-12">
                             <div className="about-inner inner">
                                 <div className="section-title">
-                                    <h2 className="title">About</h2>
+                                    <h2 className="title">Who are we</h2>
                                     <p className="description">We are an organization of highly motivated and passionate individuals from Northern Kenya who are committed to fostering a culture of learning and innovation in our community. We recognize the importance of technology in driving progress and development, and we believe that by bringing together students, learners, and experts, we can create a dynamic and supportive ecosystem that empowers individuals to develop their skills and pursue their goals.</p>
                                 </div>
                                 <div className="row mt--30 mt_sm--10">
                                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">
                                         <div className="about-us-list">
                                             <h3 className="title">Our Mission</h3>
-                                            <p>Our mission is to provide training, mentorship, and collaboration opportunities to individuals in the region who are interested in learning about new technologies and creating innovative solutions. We are dedicated to supporting our members throughout their learning journey, whether they are just starting out or have already gained expertise in a particular area.</p>
+                                            <p>Our mission is to provide training, mentorship, and collaboration opportunities to individuals in the region who are interested in learning about new technologies and creating innovative solutions. We are dedicated to supporting our members throughout their learning journey, whether they are just starting out or have already gained expertise in a particular field of STEM.</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-12 col-sm-12 col-12">

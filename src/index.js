@@ -9,9 +9,10 @@ import Footer from "./components/Footer/Footer";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-      <div className="main-page">
+      <div className="">
           <Navbar />
           <App />
+          {/* TODO:  */}
           {/* <Footer/> */}
       </div>
 

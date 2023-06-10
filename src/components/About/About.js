@@ -8,7 +8,7 @@ function About(props) {
     var title = 'Our Skilled Team'
     return (
         <div>
-            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(assets/images/bg/membership.jpeg)'}}>
+            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(https://res.cloudinary.com/dabfdxbfj/image/upload/v1686429267/800px-Mt._Ololokwe_Samburu_awr1i1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', objectFit: 'cover'}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -269,11 +269,9 @@ function About(props) {
             {/*// <!-- End Portfolio Area  -->*/}
             {/*//*/}
             {/*// <!-- Start Counterup Area  -->*/}
-            <div className="rn-counterup-area pt--25 pb--110 bg_color--1" style={{backgroundImage: 'url(assets/images/bg/funfact1.png)',
-                                                                                    backgroundPosition: 'center', backgroundSize: 'contain', backgroundRepeat: 'no-repeat',backgroundColor: '#014A75',
-                                                                                   }}>
+            <div className="rn-counterup-area pt--25 pb--110 bg_color--1" style={{backgroundColor: '#014A75'}}>
                 <div className="container">
-                    <div className="row">
+                    <div className="row" style={{marginTop: '50px'}}>
                         <div className="col-lg-12">
                             <div className="section-title text-center">
                                 <h3 className="fontWeight500" style={{color: '#fefefe'}}>Our Fun Facts</h3>
@@ -302,7 +300,7 @@ function About(props) {
                         {/*// <!-- Start Single Counterup  -->*/}
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="rn-counterup counterup_style--1">
-                                <h5 className="counter count" style={{color: '#fefefe'}}>8</h5>
+                                <h5 className="counter count" style={{color: '#fefefe'}}>4</h5>
                                 <p className="description" style={{color: '#fefefe'}}>Northern Counties we cover</p>
                             </div>
                         </div>
@@ -324,7 +322,7 @@ function About(props) {
                         </div>
                         <div className="thumbnail">
                             <div className="image">
-                                <img src="assets/images/about/innovation.png" alt="Finding Images"/>
+                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1686430339/IMG_8657_yolykv.jpg" alt="Finding Images"  style={{width: '65vw', height: '700px'}}/>
                             </div>
                         </div>
                     </div>

@@ -13,7 +13,7 @@ function About(props) {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="breadcrumb-inner pt--100 pt_sm--40 pt_md--50">
-                                <h2 className="title" style={{fontSize: '72px'}}>About</h2>
+                                <h2 className="title" style={{fontSize: '72px'}}>About Us</h2>
                                 <p style={{color: '#fefefe', fontSize: '24px'}}>Driving technology to Northern Frontier</p>
                                 <ul className="page-list">
                                     <li><a href="home">Home</a></li>
@@ -322,7 +322,7 @@ function About(props) {
                         </div>
                         <div className="thumbnail">
                             <div className="image">
-                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1686430339/IMG_8657_yolykv.jpg" alt="Finding Images"  style={{width: '65vw', height: '700px'}}/>
+                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1686430339/IMG_8657_yolykv.jpg" alt="Finding Images"  style={{width: '65vw', height: '750px', objectFit: 'cover'}}/>
                             </div>
                         </div>
                     </div>

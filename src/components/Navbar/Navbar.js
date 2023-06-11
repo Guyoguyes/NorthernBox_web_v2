@@ -31,7 +31,7 @@ function Navbar(props) {
                                         <ul className="submenu" style={{width: '50px'}}>
                                             <li><a href="events">Events</a></li>
                                             {/* <li><a href="nbcwave">NBC Wave</a></li> */}
-                                            {/*<li><a href="blogs">Blogs</a></li>*/}
+                                            <li><a href="blogs">Blogs</a></li>
                                             {/*<li><a href="project">Projects</a></li>*/}
                                         </ul>
                                     </li>

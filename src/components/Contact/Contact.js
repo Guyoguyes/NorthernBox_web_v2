@@ -187,7 +187,7 @@ function Contact(props) {
                                 </div>
                                 <div className="col-lg-6 order-1 order-lg-2">
                                     <div className="thumbnail mb_md--40 mb_sm--40">
-                                        <img src="assets/images/bg/contactbg.png" alt="trydo"/>
+                                        <img src="assets/images/bg/contactbg.png" alt=""/>
                                     </div>
                                 </div>
                             </div>

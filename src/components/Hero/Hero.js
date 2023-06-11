@@ -5,6 +5,13 @@ import {
     CarouselControl,
     CarouselIndicators,
     CarouselCaption,
+    Nav,
+    NavItem,
+    Dropdown,
+    DropdownItem,
+    DropdownToggle,
+    DropdownMenu,
+    NavLink,
   } from 'reactstrap';
 
   
@@ -36,6 +43,11 @@ import {
 function Hero(props) {
     const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
+
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen(!dropdownOpen);
+
 
   const next = () => {
     if (animating) return;

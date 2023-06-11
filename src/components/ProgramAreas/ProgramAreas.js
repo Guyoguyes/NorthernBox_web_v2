@@ -6,6 +6,15 @@ import * as RiIcons from 'react-icons/ri'
 import * as FaIcons from 'react-icons/fa'
 
 function ProgramAreas(props) {
+
+    const items = [
+        {
+            icon:'',
+            
+        }
+    ]
+
+
     return (
         <>
             {/*// <!-- Start Service Area  -->*/}

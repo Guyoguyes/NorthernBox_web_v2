@@ -10,9 +10,8 @@ function Partnerships(props) {
                             <h2>Our Partners</h2>
                         </div>
                         <ul className="brand-style-2">
-                        <li>
-                                <img src="assets/images/brand/holby.jpg" alt="Logo Images"/>
-                            </li>
+                            <li style={{width: '500px !important', height: '100px', outline: '3px solid yellow'}}><img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1689758071/Datacasmp_pzhtdn.png" alt="Logo Images" style={{width: '500px !important', height: '100px', outline: '3px solid red'}}/> </li>
+                            <li><img src="assets/images/brand/holby.jpg" alt="Logo Images"/> </li>
                         <li>
                                 <img src="assets/images/brand/mwit.jpg" alt="Logo Images"/>
                             </li>
@@ -25,27 +24,6 @@ function Partnerships(props) {
                             <li>
                                 <img src="assets/images/brand/noweikenya.jpeg" alt="Logo Images"/>
                             </li>
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-03.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-04.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-05.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-06.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-02.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-03.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
-                            {/*<li>*/}
-                            {/*    <img src="assets/images/brand/brand-04.png" alt="Logo Images"/>*/}
-                            {/*</li>*/}
                         </ul>
                     </div>
                 </div>

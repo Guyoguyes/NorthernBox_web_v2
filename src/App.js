@@ -15,6 +15,7 @@ import {ChakraProvider} from "@chakra-ui/react";
 import Membership from "./components/Membership/Membership";
 import NBCWave from "./components/NBCWAVE/NBCWave";
 import NotFound from './components/404/NotFound';
+import DataCampDonates from './components/DatacampDonates/DataCampDonates';
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
             <Route path='innovationweek' element={<TechWeek/>}/>
             <Route path='membership' element={<Membership/>}/>
             <Route path='nbcwave' element={<NBCWave/>}/>
+            <Route path='datacamp_donates' element={<DataCampDonates/>}/>
         </Routes>
       </Router>
     </ChakraProvider>

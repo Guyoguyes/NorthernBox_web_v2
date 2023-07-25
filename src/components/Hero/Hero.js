@@ -13,6 +13,7 @@ import {
     DropdownMenu,
     NavLink,
   } from 'reactstrap';
+  
 
   
 
@@ -80,8 +81,7 @@ function Hero(props) {
                                                           rgba(136, 98, 98, 0.5)
                                                           ), url(${item.src})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh'}}>
                                     {/* <img style={{width: '100%'}} src={item.src} alt={item.altText} /> */}
-                                    <h1 class="title theme-gradient" style={{fontFamily: 'Montserrat, sans-serif', fontSize:'100px', fontwe
-                                : '900', marginTop: '200px'}}>{item.caption}</h1>
+                                    <h1 class="title theme-gradient" style={{fontFamily: 'Montserrat, sans-serif', fontSize:'100px', fontWeight: '900', marginTop: '200px'}}>{item.caption}</h1>
                                     <p class="description" style={{color: '#fefefe', fontSize: '24px', width: '700px', textAlign: 'center', margin: '0 auto'}}>{item.description}</p>
                                     <div class="slide-btn" style={{marginTop: '90px'}}>
                                         <a class="rn-button-style--2 btn-primary-color" href="/about">More</a>

@@ -1,0 +1,37 @@
+/* Add the following CSS code to your existing styles */
+
+@media (max-width: 991px) {
+  /* Styles for screens up to 991px */
+  
+  .header-right {
+    display: none;
+  }
+  
+  .humberger-menu,
+  .close-menu {
+    display: block;
+  }
+}
+
+/* Add more media queries for other screen sizes as needed */
+
+/* For example, styles for screens up to 767px */
+@media (max-width: 767px) {
+  .mainmenunav {
+    text-align: center;
+  }
+  
+  .mainmenunav ul.mainmenu {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mainmenunav ul.mainmenu li {
+    margin-bottom: 10px;
+  }
+  
+  .humberger-menu,
+  .close-menu {
+    margin-left: 10px;
+  }
+}

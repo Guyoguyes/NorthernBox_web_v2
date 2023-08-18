@@ -123,152 +123,7 @@ function About(props) {
             {/*// <!-- Start Service Area  -->*/}
             {/*//*/}
             <ProgramAreas/>
-            {/*// <!-- Start Portfolio Area  -->*/}
-            {/*//TODO: Community project commented out */}
-            {/*<div className="rn-portfolio-area rn-section-gap bg_color--1">*/}
-            {/*    <div className="portfolio-sacousel-inner pb--30">*/}
-            {/*        <div className="container">*/}
-            {/*            <div className="row">*/}
-            {/*                <div className="col-lg-12">*/}
-            {/*                    <div className="section-title text-center mb--20 mb_sm--0 mb_md--0">*/}
-            {/*                        <h2 className="title">Community Projects</h2>*/}
-            {/*                        <p>All our projects are designed specifically to solve challenges faced by northern kenya from eduction to agriculture to bussiness</p>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-            {/*        </div>*/}
-
-            {/*        <div*/}
-            {/*            className="portfolio-slick-activation rn-slick-activation item-fluid rn-slick-dot mt--40 mt_sm--40"*/}
-            {/*            data-slick-options='{*/}
-            {/*                                "spaceBetween": 15,*/}
-            {/*                                "slidesToShow": 5,*/}
-            {/*                                "slidesToScroll": 1,*/}
-            {/*                                "arrows": true,*/}
-            {/*                                "infinite": true,*/}
-            {/*                                "dots": true*/}
-            {/*                            }' data-slick-responsive='[*/}
-            {/*                            {"breakpoint":1600, "settings": {"slidesToShow": 4}},*/}
-            {/*                            {"breakpoint":1200, "settings": {"slidesToShow": 3}},*/}
-            {/*                            {"breakpoint":890, "settings": {"slidesToShow": 3}},*/}
-            {/*                            {"breakpoint":590, "settings": {"slidesToShow": 2}},*/}
-            {/*                            {"breakpoint":480, "settings": {"slidesToShow": 1}}*/}
-            {/*                            ]'>*/}
-
-                        {/*// <!-- Start Single Portfolio  -->*/}
-            {/*            <div className="portfolio">*/}
-            {/*                <div className="thumbnail-inner">*/}
-            {/*                    <div className="thumbnail image-2"></div>*/}
-            {/*                    <div className="bg-blr-image image-2"></div>*/}
-            {/*                </div>*/}
-            {/*                <div className="content">*/}
-            {/*                    <div className="inner">*/}
-            {/*                        <p>Development</p>*/}
-            {/*                        <h4><a href="portfolio-details.html">Getting tickets to the big show</a></h4>*/}
-            {/*                        <div className="portfolio-button">*/}
-            {/*                            <a className="rn-btn" href="portfolio-details.html">Case Study</a>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-                        {/*// <!-- End Single Portfolio  -->*/}
-            {/*            /!*//*!/*/}
-                        {/*// <!-- Start Single Portfolio  -->*/}
-            {/*            <div className="portfolio">*/}
-            {/*                <div className="thumbnail-inner">*/}
-            {/*                    <div className="thumbnail image-5"></div>*/}
-            {/*                    <div className="bg-blr-image image-5"></div>*/}
-            {/*                </div>*/}
-            {/*                <div className="content">*/}
-            {/*                    <div className="inner">*/}
-            {/*                        <p>Development</p>*/}
-            {/*                        <h4><a href="portfolio-details.html">Getting tickets to the big show</a></h4>*/}
-            {/*                        <div className="portfolio-button">*/}
-            {/*                            <a className="rn-btn" href="portfolio-details.html">Case Study</a>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-                        {/*// <!-- End Single Portfolio  -->*/}
-            {/*            /!*//*!/*/}
-                        {/*// <!-- Start Single Portfolio  -->*/}
-            {/*            <div className="portfolio">*/}
-            {/*                <div className="thumbnail-inner">*/}
-            {/*                    <div className="thumbnail image-6"></div>*/}
-            {/*                    <div className="bg-blr-image image-6"></div>*/}
-            {/*                </div>*/}
-            {/*                <div className="content">*/}
-            {/*                    <div className="inner">*/}
-            {/*                        <p>Development</p>*/}
-            {/*                        <h4><a href="portfolio-details.html">Getting tickets to the big show</a></h4>*/}
-            {/*                        <div className="portfolio-button">*/}
-            {/*                            <a className="rn-btn" href="portfolio-details.html">Case Study</a>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-                        {/*// <!-- End Single Portfolio  -->*/}
-            {/*            /!*//*!/*/}
-                        {/*// <!-- Start Single Portfolio  -->*/}
-            {/*            <div className="portfolio">*/}
-            {/*                <div className="thumbnail-inner">*/}
-            {/*                    <div className="thumbnail image-7"></div>*/}
-            {/*                    <div className="bg-blr-image image-7"></div>*/}
-            {/*                </div>*/}
-            {/*                <div className="content">*/}
-            {/*                    <div className="inner">*/}
-            {/*                        <p>Development</p>*/}
-            {/*                        <h4><a href="portfolio-details.html">Getting tickets to the big show</a></h4>*/}
-            {/*                        <div className="portfolio-button">*/}
-            {/*                            <a className="rn-btn" href="portfolio-details.html">Case Study</a>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-                        {/*// <!-- End Single Portfolio  -->*/}
-            {/*            /!*//*!/*/}
-                        {/*// <!-- Start Single Portfolio  -->*/}
-            {/*            <div className="portfolio">*/}
-            {/*                <div className="thumbnail-inner">*/}
-            {/*                    <div className="thumbnail image-8"></div>*/}
-            {/*                    <div className="bg-blr-image image-8"></div>*/}
-            {/*                </div>*/}
-            {/*                <div className="content">*/}
-            {/*                    <div className="inner">*/}
-            {/*                        <p>Development</p>*/}
-            {/*                        <h4><a href="portfolio-details.html">Getting tickets to the big show</a></h4>*/}
-            {/*                        <div className="portfolio-button">*/}
-            {/*                            <a className="rn-btn" href="portfolio-details.html">Case Study</a>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-                        {/*// <!-- End Single Portfolio  -->*/}
-            {/*            /!*//*!/*/}
-                        {/*// <!-- Start Single Portfolio  -->*/}
-            {/*            <div className="portfolio">*/}
-            {/*                <div className="thumbnail-inner">*/}
-            {/*                    <div className="thumbnail image-9"></div>*/}
-            {/*                    <div className="bg-blr-image image-9"></div>*/}
-            {/*                </div>*/}
-            {/*                <div className="content">*/}
-            {/*                    <div className="inner">*/}
-            {/*                        <p>Development</p>*/}
-            {/*                        <h4><a href="portfolio-details.html">Getting tickets to the big show</a></h4>*/}
-            {/*                        <div className="portfolio-button">*/}
-            {/*                            <a className="rn-btn" href="portfolio-details.html">Case Study</a>*/}
-            {/*                        </div>*/}
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*            </div>*/}
-                        {/*// <!-- End Single Portfolio  -->*/}
-            {/*        </div>*/}
-                    {/*// <!-- End Portfolio Activation  -->*/}
-            {/*    </div>*/}
-            {/*</div>*/}
-            {/*// <!-- End Portfolio Area  -->*/}
-            {/*//*/}
-            {/*// <!-- Start Counterup Area  -->*/}
+            
             <div className="rn-counterup-area pt--25 pb--110 bg_color--1" style={{backgroundColor: '#014A75'}}>
                 <div className="container">
                     <div className="row" style={{marginTop: '50px'}}>
@@ -282,7 +137,7 @@ function About(props) {
                         {/*// <!-- Start Single Counterup  -->*/}
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="rn-counterup counterup_style--1">
-                                <h5 className="counter count" style={{color: '#fefefe'}}>92</h5>
+                                <h5 className="counter count" style={{color: '#fefefe'}}>250</h5>
                                 <p className="description" style={{color: '#fefefe'}}>Total Members.</p>
                             </div>
                         </div>
@@ -291,7 +146,7 @@ function About(props) {
                         {/*// <!-- Start Single Counterup  -->*/}
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="rn-counterup counterup_style--1">
-                                <h5 className="counter count" style={{color: '#fefefe'}}>33</h5>
+                                <h5 className="counter count" style={{color: '#fefefe'}}>43</h5>
                                 <p className="description" style={{color: '#fefefe'}}>Skilled and Exprienced Members.</p>
                             </div>
                         </div>
@@ -300,7 +155,7 @@ function About(props) {
                         {/*// <!-- Start Single Counterup  -->*/}
                         <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                             <div className="rn-counterup counterup_style--1">
-                                <h5 className="counter count" style={{color: '#fefefe'}}>4</h5>
+                                <h5 className="counter count" style={{color: '#fefefe'}}>5</h5>
                                 <p className="description" style={{color: '#fefefe'}}>Northern Counties we cover</p>
                             </div>
                         </div>

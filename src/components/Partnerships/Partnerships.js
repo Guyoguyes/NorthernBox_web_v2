@@ -9,8 +9,10 @@ function Partnerships(props) {
                         <div className="section-title text-center mb--30">
                             <h2>Our Partners</h2>
                         </div>
-                        <ul className="brand-style-2">
-                            <li style={{width: '500px !important', height: '100px', outline: '3px solid yellow'}}><img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1689758071/Datacasmp_pzhtdn.png" alt="Logo Images" style={{width: '500px !important', height: '100px', outline: '3px solid red'}}/> </li>
+                        <ul className="brand-style-2" style={{width: 'auto'}}>
+                            <l>
+                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1690653832/regular_y5aooc.png" alt="Logo Images" /> </l>
+                            <li><img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1690654068/DCD-logo-regular_mtauom.png" alt="Logo Images"/> </li>
                             <li><img src="assets/images/brand/holby.jpg" alt="Logo Images"/> </li>
                         <li>
                                 <img src="assets/images/brand/mwit.jpg" alt="Logo Images"/>

@@ -17,7 +17,7 @@ function Funfact() {
                     {/*// <!-- Start Single Counterup  -->*/}
                     <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                         <div className="rn-counterup counterup_style--1">
-                            <h5 className="counter count" style={{color: '#fefefe'}}>92</h5>
+                            <h5 className="counter count" style={{color: '#fefefe'}}>250</h5>
                             <p className="description" style={{color: '#fefefe'}}>Total Members.</p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ function Funfact() {
                     {/*// <!-- Start Single Counterup  -->*/}
                     <div className="col-lg-4 col-md-4 col-sm-6 col-12">
                         <div className="rn-counterup counterup_style--1">
-                            <h5 className="counter count" style={{color: '#fefefe'}}>8</h5>
+                            <h5 className="counter count" style={{color: '#fefefe'}}>5</h5>
                             <p className="description" style={{color: '#fefefe'}}>Nortern Counties we cover</p>
                         </div>
                     </div>

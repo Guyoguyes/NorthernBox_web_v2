@@ -81,8 +81,8 @@ function Hero(props) {
                                                           rgba(136, 98, 98, 0.5)
                                                           ), url(${item.src})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh'}}>
                                     {/* <img style={{width: '100%'}} src={item.src} alt={item.altText} /> */}
-                                    <h1 class="title theme-gradient" style={{fontFamily: 'Montserrat, sans-serif', fontSize:'100px', fontWeight: '900', marginTop: '200px'}}>{item.caption}</h1>
-                                    <p class="description" style={{color: '#fefefe', fontSize: '24px', width: '700px', textAlign: 'center', margin: '0 auto'}}>{item.description}</p>
+                                    <h1 class="title theme-gradient" style={{fontFamily: 'Montserrat, sans-serif', fontSize:'50px', fontWeight: '900', marginTop: '200px'}}>{item.caption}</h1>
+                                    <p class="description" style={{color: '#fefefe', fontSize: '14px', width: '700px', textAlign: 'center', margin: '0 auto'}}>{item.description}</p>
                                     <div class="slide-btn" style={{marginTop: '90px'}}>
                                         <a class="rn-button-style--2 btn-primary-color" href="/about">More</a>
                                     </div>
@@ -125,72 +125,8 @@ function Hero(props) {
       />
     </Carousel>
   );
-    // return (
-    //     <>
-
-    //     </>
-    //     // <div class="rn-slider-area slider-activation rn-slick-activation rn-slick-dot dot-light mb--0" data-slick-options='{
-    //     //     "slidesToShow": 1, 
-    //     //     "slidesToScroll": 1, 
-    //     //     "arrows": true, 
-    //     //     "fade": true,
-    //     //     "infinite": true,
-    //     //     "easing": "fade",
-    //     //     "infinite": true,
-    //     //     "adaptiveHeight": true,
-    //     //     "dots": true 
-    //     // }'>
-    //     //     <div class="slide slide-style-2 fullscreen d-flex align-items-center justify-content-center bg_image bg_image--15" data-black-overlay="8">
-    //     //         <div class="container">
-    //     //             <div class="row">
-    //     //                 <div class="col-lg-12">
-    //     //                     <div class="inner text-center">
-    //     //                         <h1 class="title theme-gradient">Marketing</h1>
-    //     //                         <p class="description">There are many variations of passages of Lorem Ipsum
-    //     //                             available but the majority have suffered alteration.</p>
-    //     //                         <div class="slide-btn">
-    //     //                             <a class="rn-button-style--2 btn-primary-color" href="contact.html">Contact Us</a>
-    //     //                         </div>
-    //     //                     </div>
-    //     //                 </div>
-    //     //             </div>
-    //     //         </div>
-    //     //     </div>
-    //     //     <div class="slide slide-style-2 fullscreen d-flex align-items-center justify-content-center bg_image bg_image--12" data-black-overlay="8">
-    //     //         <div class="container">
-    //     //             <div class="row">
-    //     //                 <div class="col-lg-12">
-    //     //                     <div class="inner text-center">
-    //     //                         <h1 class="title theme-gradient">Development.</h1>
-    //     //                         <p class="description">There are many variations of passages of Lorem Ipsum
-    //     //                             available but the majority have suffered alteration.</p>
-    //     //                         <div class="slide-btn">
-    //     //                             <a class="rn-button-style--2 btn-primary-color" href="contact.html">Contact Us</a>
-    //     //                         </div>
-    //     //                     </div>
-    //     //                 </div>
-    //     //             </div>
-    //     //         </div>
-    //     //     </div>
-    //     //     <div class="slide slide-style-2 fullscreen d-flex align-items-center justify-content-center bg_image bg_image--12" data-black-overlay="8">
-    //     //         <div class="container">
-    //     //             <div class="row">
-    //     //                 <div class="col-lg-12">
-    //     //                     <div class="inner text-center">
-    //     //                         <h1 class="title theme-gradient">UX Research.</h1>
-    //     //                         <p class="description">There are many variations of passages of Lorem Ipsum
-    //     //                             available but the majority have suffered alteration.</p>
-    //     //                         <div class="slide-btn">
-    //     //                             <a class="rn-button-style--2 btn-primary-color" href="contact.html">Contact Us</a>
-    //     //                         </div>
-    //     //                     </div>
-    //     //                 </div>
-    //     //             </div>
-    //     //         </div>
-    //     //     </div>
-
-    //     // </div>
-    // );
+   
 }
 
 export default Hero;
+

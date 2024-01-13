@@ -41,7 +41,7 @@ function CommunityLeadTeam() {
             twitter: 'https://twitter.com/wakogalgallow'
         },
         {
-            image: '',
+            image: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783434/mustafa_uzeexe.png',
             name: 'Mustafa Ahmed',
             designation:'Business Development and Finance',
             position: 'Data Scientist',

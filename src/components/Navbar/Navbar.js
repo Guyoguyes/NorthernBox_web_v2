@@ -1,9 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as AiIcons from 'react-icons/ai';
 
 function Navbar(props) {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  const toggleSubmenu = (e) => {
+    e.preventDefault();
+    const parentLi = e.currentTarget.parentElement;
+    parentLi.classList.toggle('open');
+    const submenu = parentLi.querySelector('.submenu');
+    if (submenu) {
+      submenu.classList.toggle('active');
+    }
+  };
+
+  const handleNavLinkClick = () => {
+    closeMenu();
+  };
+
   return (
-    <header className="header-area formobile-menu header--transparent black-logo-version">
+    <header className={`header-area formobile-menu header--transparent ${menuOpen ? 'menu-open' : ''}`}>
       <div className="header-wrapper" id="header-wrapper">
         <div className="header-left">
           <div className="logo w-72">
@@ -18,36 +42,52 @@ function Navbar(props) {
         </div>
         <div className="header-right flex items-center">
           <div className="mainmenunav d-lg-block mx-auto">
-            <nav className="main-menu-navbar">
+            <nav className={`main-menu-navbar ${menuOpen ? 'show' : ''}`}>
               <ul className="mainmenu text-xl">
                 <li className="has-droupdown">
-                  <a href="home">Home</a>
+                  <a href="home" onClick={handleNavLinkClick}>
+                    Home
+                  </a>
                 </li>
                 <li>
-                  <a href="about">Community</a>
+                  <a href="about" onClick={handleNavLinkClick}>
+                    Community
+                  </a>
                 </li>
                 <li className="has-droupdown">
-                  <a>Activities</a>
+                  <a onClick={toggleSubmenu}>Activities</a>
                   <ul className="submenu">
                     <li>
-                      <a href="datacamp_donates">Datacamp Donate</a>
+                      <a href="datacamp_donates" onClick={handleNavLinkClick}>
+                        Datacamp Donate
+                      </a>
                     </li>
                     <li>
-                      <a href="events">Events</a>
+                      <a href="events" onClick={handleNavLinkClick}>
+                        Events
+                      </a>
                     </li>
                     <li>
-                      <a href="blogs">Blogs</a>
+                      <a href="blogs" onClick={handleNavLinkClick}>
+                        Blogs
+                      </a>
                     </li>
-                    <li>
-                      <a href="blogs">News</a>
-                    </li>
+                    {/* <li>
+                      <a href="news" onClick={handleNavLinkClick}>
+                        News
+                      </a>
+                    </li> */}
                   </ul>
                 </li>
+                {/* <li>
+                  <a href="contact" onClick={handleNavLinkClick}>
+                    Hire Talent
+                  </a>
+                </li> */}
                 <li>
-                  <a href="contact">Hire Talent</a>
-                </li>
-                <li>
-                  <a href="contact">Contact</a>
+                  <a href="contact" onClick={handleNavLinkClick}>
+                    Contact
+                  </a>
                 </li>
               </ul>
             </nav>
@@ -57,12 +97,12 @@ function Navbar(props) {
               <span>Get Started</span>
             </a>
           </div>
-          <div className="humberger-menu d-block d-lg-none pl-4">
+          <div className="humberger-menu d-block d-lg-none pl-4" onClick={toggleMenu}>
             <span className="menutrigger text-white text-2xl">
               <AiIcons.AiOutlineMenu />
             </span>
           </div>
-          <div className="close-menu d-block d-lg-none pl-4">
+          <div className="close-menu d-block d-lg-none pl-4" onClick={closeMenu}>
             <span className="closeTrigger text-2xl">
               <AiIcons.AiOutlineClose />
             </span>

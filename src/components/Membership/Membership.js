@@ -33,7 +33,7 @@ const  Membership = () =>{
                                                 <span className="subtitle">Join a community of passionate individual dedicated to build and learning from people who a like minded</span>
                                             </div>
                                         </div>
-                                        <div className="pricing-footer"><a className="rn-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfR4otBMjYE77DxuzG4IFTkOwkA4rRIhVnbmjoCJbdqpx0HMQ/viewform?usp=sf_link">Get Started</a></div>
+                                        <div className="pricing-footer"><a className="rn-btn" href="reg_membership">Get Started</a></div>
                                     </div>
                                 </div>
                             </div>

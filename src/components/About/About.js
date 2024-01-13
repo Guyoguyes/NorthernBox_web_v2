@@ -8,7 +8,7 @@ function About(props) {
     var title = 'Our Skilled Team'
     return (
         <div>
-            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(https://res.cloudinary.com/dabfdxbfj/image/upload/v1686429267/800px-Mt._Ololokwe_Samburu_awr1i1.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', objectFit: 'cover'}}>
+            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(https://res.cloudinary.com/dabfdxbfj/image/upload/v1686428211/IMG_8631_ndwkt2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', objectFit: 'cover'}}>
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
@@ -172,7 +172,7 @@ function About(props) {
                             <div className="content">
                                 <h4 className="theme-gradient">Find Your STEM community Now</h4>
                                 <p>It is important to surround yourself in an environment where you can be comfortable and motivated. When it comes to design and creative thinking, innovators need to have a space that is both open and encouraging</p><a
-                                className="rn-btn btn-white" href="https://docs.google.com/forms/d/e/1FAIpQLSfR4otBMjYE77DxuzG4IFTkOwkA4rRIhVnbmjoCJbdqpx0HMQ/viewform?usp=sf_link">Get Started</a>
+                                className="rn-btn btn-white" href="membership">Get Started</a>
                             </div>
                         </div>
                         <div className="thumbnail">

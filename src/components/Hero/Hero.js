@@ -1,54 +1,47 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
-    Carousel,
-    CarouselItem,
-    CarouselControl,
-    CarouselIndicators,
-    CarouselCaption,
-    Nav,
-    NavItem,
-    Dropdown,
-    DropdownItem,
-    DropdownToggle,
-    DropdownMenu,
-    NavLink,
-  } from 'reactstrap';
-  
+  Carousel,
+  CarouselItem,
+  CarouselControl,
+  CarouselIndicators,
+  CarouselCaption,
+} from 'reactstrap';
 
-  
+const items = [
+  {
+    src: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1705077199/image1_0_tcmip9.jpg',
+    altText: '_Connect_',
+    caption: '_Connect_',
+    description: 'Join our community that values continuous learning and mutual inspiration. NorthernBox is your hub for knowledge expansion and personal growth.',
+    key: 1,
+  },
+  {
+    src: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783274/create_me_an_im_1_pvqmnp.png',
+    altText: '_Learn_',
+    caption: '_Learn_',
+    description: 'Embark on a journey of continuous learning. NorthernBox provides opportunities for you to expand your knowledge and skills.',
+    key: 2,
+  },
+  {
+    src: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783788/I_am_from_north_0_wjmw3a.png',
+    altText: 'Inspire',
+    caption: 'Inspire',
+    description: 'Unleash your potential. NorthernBox is here to inspire you to pursue your passions and achieve your fullest potential.',
+    key: 3,
+  },
+  // {
+  //   src: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783788/I_am_from_north_0_wjmw3a.png',
+  //   altText: 'Innovate',
+  //   caption: 'Innovate',
+  //   description: 'Fuel innovation and creativity. NorthernBox believes in the power of our community to develop groundbreaking solutions for local challenges.',
+  //   key: 3,
+  // },
+];
 
-  const items = [
-    {
-      src: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1686428211/IMG_8631_ndwkt2.jpg',
-      altText: 'Learn',
-      caption: '_Learn_',
-      description: 'We believe that learning is a lifelong process and we strive to provide opportunities for people to expand their knowledge and skills.',
-      key: 1,
-    },
-    {
-      src: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1686422634/IMG_8538_zso9kt.jpg',
-      altText: 'inspire',
-      caption: '_Inspire_',
-      description: 'We aim to inspire individuals in our community to pursue their passions and reach their full potential.',
-      key: 2,
-    },
-    {
-      src: 'https://res.cloudinary.com/dabfdxbfj/image/upload/v1686427482/IMG_8713_o8on6o.jpg',
-      altText: 'innovate',
-      caption: '_Innovate_',
-      description: 'We encourage innovation and creativity, and believe that our community has the potential to develop new solutions to address local challenges.',
-      key: 3,
-    },
-  ];
 
 function Hero(props) {
-    const [activeIndex, setActiveIndex] = useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
-
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggle = () => setDropdownOpen(!dropdownOpen);
-
 
   const next = () => {
     if (animating) return;
@@ -74,59 +67,71 @@ function Hero(props) {
         onExited={() => setAnimating(false)}
         key={item.src}
       >
-        
-        {/* <img style={{width: '100%'}} src={item.src} alt={item.altText} /> */}
-        <div class="inner text-center" style={{ background: `linear-gradient(
-                                                          rgba(0, 0, 0, 0.5),
-                                                          rgba(136, 98, 98, 0.5)
-                                                          ), url(${item.src})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh'}}>
-                                    {/* <img style={{width: '100%'}} src={item.src} alt={item.altText} /> */}
-                                    <h1 class="title theme-gradient" style={{fontFamily: 'Montserrat, sans-serif', fontSize:'50px', fontWeight: '900', marginTop: '200px'}}>{item.caption}</h1>
-                                    <p class="description" style={{color: '#fefefe', fontSize: '14px', width: '700px', textAlign: 'center', margin: '0 auto'}}>{item.description}</p>
-                                    <div class="slide-btn" style={{marginTop: '90px'}}>
-                                        <a class="rn-button-style--2 btn-primary-color" href="/about">More</a>
-                                    </div>
-                                </div>
-                                
-        <CarouselCaption
-          captionText={item.caption}
-          captionHeader={item.caption}
+        <div
+          style={{
+            background: `linear-gradient(
+                              rgba(0, 0, 0, 0.5),
+                              rgba(136, 98, 98, 0.5)
+                              ), url(${item.src})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            height: '100vh',
+            textAlign: 'center',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+          }}
         >
-
-        </CarouselCaption>
+          <h1
+            style={{
+              fontFamily: 'Montserrat, sans-serif',
+              fontSize: '50px',
+              fontWeight: '900',
+              marginTop: '60px',
+              color: '#014A75'
+            }}
+          >
+            {item.caption}
+          </h1>
+          <p
+            style={{
+              color: '#fefefe',
+              fontSize: '24px',
+              width: '70%',
+              textAlign: 'center',
+              margin: '0 auto',
+            }}
+          >
+            {item.description}
+          </p>
+          <div style={{ marginTop: '30px' }}>
+            <a
+              style={{
+                backgroundColor: '#007bff',
+                padding: '10px 20px',
+                borderRadius: '5px',
+                color: '#fff',
+                textDecoration: 'none',
+              }}
+              href="/about"
+            >
+              More
+            </a>
+          </div>
+        </div>
+        <CarouselCaption captionText={item.caption}  />
       </CarouselItem>
     );
   });
 
   return (
-    <Carousel
-      activeIndex={activeIndex}
-      next={next}
-      previous={previous}
-      {...props}
-    >
-      <CarouselIndicators
-        items={items}
-        activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {/* {slides} */}
-      
-        {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
+    <Carousel activeIndex={activeIndex} next={next} previous={previous} {...props}>
+      <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
+      {slides}
+      <CarouselControl direction="prev" directionText="Previous" onClickHandler={previous} />
+      <CarouselControl direction="next" directionText="Next" onClickHandler={next} />
     </Carousel>
   );
-   
 }
 
 export default Hero;
-

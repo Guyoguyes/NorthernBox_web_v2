@@ -6,6 +6,7 @@
     "@chakra-ui/react": "^2.7.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@headlessui/react": "^1.7.18",
     "@progress/kendo-drawing": "^1.17.1",
     "@progress/kendo-licensing": "^1.2.2",
     "@progress/kendo-react-buttons": "^5.8.0",

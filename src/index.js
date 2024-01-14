@@ -13,7 +13,7 @@ root.render(
           <Navbar />
           <App />
           {/* TODO:  */}
-          {/* <Footer/> */}
+          <Footer/>
       </div>
 
   </React.StrictMode>

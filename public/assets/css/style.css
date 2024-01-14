@@ -15412,7 +15412,7 @@ Blog Styles
   z-index: 1;
 }
 .blog.blog-style--1 .thumbnail a::after {
-  background: linear-gradient(to bottom, #fc004d 0, #000000 100%);
+  background: linear-gradient(to bottom, #2566df 0, #000000 100%);
   position: absolute;
   left: 0;
   right: 0;

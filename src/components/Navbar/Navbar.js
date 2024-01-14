@@ -31,7 +31,7 @@ function Navbar(props) {
       <div className="header-wrapper" id="header-wrapper">
         <div className="header-left">
           <div className="logo w-72">
-            <a href="index.html">
+            <a href="/home">
               <img
                 src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1685890010/NorthernBox_Logo-1-removebg-preview_e4d9et.png"
                 alt="NorthernBox Logo"

@@ -17,6 +17,7 @@ import NBCWave from "./components/NBCWAVE/NBCWave";
 import NotFound from './components/404/NotFound';
 import DataCampDonates from './components/DatacampDonates/DataCampDonates';
 import MemberShipRegistration from './components/Membership/Register';
+import AmbassadorReg from './components/Membership/ambassador_reg';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
             <Route path='nbcwave' element={<NBCWave/>}/>
             <Route path='datacamp_donates' element={<DataCampDonates/>}/>
             <Route path='reg_membership' element={<MemberShipRegistration/>}/>
+            <Route path='reg_Ambassador' element={<AmbassadorReg/>}/>
         </Routes>
       </Router>
     </ChakraProvider>

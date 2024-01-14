@@ -1,18 +1,32 @@
 import React from 'react'
+// import Particles from 'react-particles-js'; 
 
 const  Membership = () =>{
     return(
         <>
-            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(assets/images/bg/bg-image-5.jpg)'}}>
+            <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(https://res.cloudinary.com/dabfdxbfj/image/upload/v1686429267/800px-Mt._Ololokwe_Samburu_awr1i1.jpg)', backgroundPosition:  'center', backgroundSize: 'cover'}}>
+            {/* <Particles 
+                    params={{ 
+                    particles: { 
+                        number: { 
+                        value: 200, 
+                        density: { 
+                            enable: true, 
+                            value_area: 1000, 
+                        } 
+                        }, 
+                    }, 
+                    }} 
+                />  */}
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="breadcrumb-inner pt--100 pt_sm--40 pt_md--50">
-                                <h2 className="title" style={{fontSize: '72px'}}>Become A Member</h2>
-                                <ul className="page-list">
+                                <h2 className="title" style={{fontSize: '72px'}}>Get Involved</h2>
+                                {/* <ul className="page-list">
                                     <li><a href="home">Home</a></li>
-                                    <li className="current-page">Membership</li>
-                                </ul>
+                                    <li className="current-page">ge</li>
+                                </ul> */}
                             </div>
                         </div>
                     </div>
@@ -30,10 +44,10 @@ const  Membership = () =>{
                                             <h4 className="title" >Join Community</h4>
                                             <div className="pricing">
                                                 <img style={{ margin: '0 auto', height: '200px'}} src="assets/images/service/community.png" alt="Community Image" />
-                                                <span className="subtitle">Join a community of passionate individual dedicated to build and learning from people who a like minded</span>
+                                                <span className="subtitle">At NorthernBox, we believe in the power of collective knowledge, and we invite you to join us on this exciting journey. Connect with individuals who share your mindset, expand your horizons, and contribute to a community that values shared learning and collective progress.</span>
                                             </div>
                                         </div>
-                                        <div className="pricing-footer"><a className="rn-btn" href="reg_membership">Get Started</a></div>
+                                        <div className="pricing-footer"><a className="rn-btn" href="reg_membership">Became A NorthernBox Member</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -45,10 +59,10 @@ const  Membership = () =>{
                                             <h4 className="title">Join Discord</h4>
                                             <div className="pricing" >
                                                 <img style={{ margin: '0 auto', height: '200px'}} src="assets/images/service/discord.png" alt="discord image" className='price' />
-                                                <span className="subtitle">Connect to our Discord Community server to interact and engage with member, ask for assistance and network</span>
+                                                <span className="subtitle">Join our vibrant Discord Community server to immerse yourself in dynamic interactions, seek assistance, and broaden your network. Whether you're here to learn, collaborate, or simply connect, our Discord server is the hub where the NorthernBox community comes alive. Elevate your experience, foster connections, and be part of a community that values knowledge, innovation, and collaboration</span>
                                             </div>
                                         </div>
-                                        <div className="pricing-footer"><a className="rn-btn" href="https://discord.gg/V6njEqCTuj">Connect Discord</a></div>
+                                        <div className="pricing-footer"><a className="rn-btn" href="https://discord.gg/V6njEqCTuj">Connect To Discord</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -57,13 +71,13 @@ const  Membership = () =>{
                                 <div className="rn-pricing">
                                     <div className="pricing-table-inner">
                                         <div className="pricing-header">
-                                            <h4 className="title">Join WAVE</h4>
+                                            <h4 className="title">NorthernBox Ambassador</h4>
                                             <div className="pricing">
                                                 <img style={{ margin: '0 auto', height: '200px'}} src="assets/images/service/wave.png" alt="wave image" />
-                                                <span className="subtitle">Northernbox WAVE is an active learning and building solution through different teams from the community. This is for both Beginners and Seniors in coding</span>
+                                                <span className="subtitle">Become a cornerstone of NorthernBox's community-driven initiatives by joining our passionate team of ambassadors. These dedicated individuals are committed to nurturing a culture of learning, innovation, and collaboration in their respective regions</span>
                                             </div>
                                         </div>
-                                        <div className="pricing-footer"><a className="rn-btn" href="nbcwave">Be A Waver</a></div>
+                                        <div className="pricing-footer"><a className="rn-btn" href="reg_Ambassador">Become A NorthernBox Ambassador</a></div>
                                     </div>
                                 </div>
                             </div>

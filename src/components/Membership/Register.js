@@ -113,10 +113,15 @@ function MemberShipRegistration() {
                             onChange={handleSelectChange}
                             required
                         >
-                            <option value="" disabled>Select an email option</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="none">Prefer not to say</option>
+                            <option value="" disabled></option>
+                            <option value="0-5">0-5 years</option>
+                            <option value="6-10">6-10 years</option>
+                            <option value="11-15">11-15 years</option>
+                            <option value="16-20">16-20 years</option>
+                            <option value="21-25">21-25 years</option>
+                            <option value="26-30">26-30 years</option>
+                            <option value="31-35">31-35 years</option>
+                            <option value="35+"> Above 35 years</option>
                         </select>
                     </div>
 
@@ -130,7 +135,7 @@ function MemberShipRegistration() {
                             onChange={handleSelectChange}
                             required
                         >
-                            <option value="" disabled>Select an email option</option>
+                            <option value="" disabled></option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="none">Prefer not to say</option>
@@ -140,31 +145,30 @@ function MemberShipRegistration() {
                 </div>
                 <div className="mb-6">
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">County of Residence</label>
-                    <select
-                        id="email"
-                        className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                        value={selectedOption}
-                        onChange={handleSelectChange}
-                        required
-                    >
-                        <option value="" disabled>Select an email option</option>
-                        <option value="john.doe@company.com">john.doe@company.com</option>
-                        <option value="jane.smith@company.com">jane.smith@company.com</option>
-                        {/* Add more options as needed */}
-                    </select>
+                    <input
+                            type="text"
+                            id="phone"
+                            className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Nairobi"
+                            required
+                        />
                 </div>
                 <div className="mb-6">
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Areas Of Interest / Specialization</label>
+                    <label htmlFor="Specialization" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Areas Of Interest / Specialization</label>
                     <select
-                        id="email"
+                        id="Specialization"
                         className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
                         value={selectedOption}
                         onChange={handleSelectChange}
                         required
                     >
-                        <option value="" disabled>Select an email option</option>
-                        <option value="john.doe@company.com">john.doe@company.com</option>
-                        <option value="jane.smith@company.com">jane.smith@company.com</option>
+                        <option value=""></option>
+                        <option value="webDevelopment">Web Development</option>
+                        <option value="mobileAppDevelopment">Mobile App Development</option>
+                        <option value="dataScience">Data Science</option>
+                        <option value="artificialIntelligence">Artificial Intelligence</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="cloudComputing">Cloud Computing</option>
                         {/* Add more options as needed */}
                     </select>
                 </div>
@@ -177,9 +181,13 @@ function MemberShipRegistration() {
                         onChange={handleSelectChange}
                         required
                     >
-                        <option value="" disabled>Select an email option</option>
-                        <option value="john.doe@company.com">john.doe@company.com</option>
-                        <option value="jane.smith@company.com">jane.smith@company.com</option>
+                        <option value=""></option>
+                        <option value="highSchool">High School</option>
+                        <option value="associateDegree">Associate Degree</option>
+                        <option value="bachelorsDegree">Bachelor's Degree</option>
+                        <option value="mastersDegree">Master's Degree</option>
+                        <option value="doctoralDegree">Doctoral Degree</option>
+                        <option value="professionalCertification">Professional Certification</option>
                         {/* Add more options as needed */}
                     </select>
                 </div>
@@ -192,10 +200,14 @@ function MemberShipRegistration() {
                         onChange={handleSelectChange}
                         required
                     >
-                        <option value="" disabled>Select an email option</option>
-                        <option value="john.doe@company.com">john.doe@company.com</option>
-                        <option value="jane.smith@company.com">jane.smith@company.com</option>
-                        {/* Add more options as needed */}
+                        <option value=""></option>
+                        <option value="friend">From a Friend</option>
+                        <option value="searchEngine">Search Engine</option>
+                        <option value="socialMedia">Social Media</option>
+                        <option value="advertisement">Advertisement</option>
+                        <option value="website">Our Website</option>
+                        <option value="event">Event or Conference</option>
+                        <option value="other">Other</option>
                     </select>
                 </div>
                 <div className="mb-6">

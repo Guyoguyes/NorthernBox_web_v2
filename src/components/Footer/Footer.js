@@ -23,7 +23,7 @@ function Footer() {
                     <li><a href="/membership" class="hover:underline me-4 md:me-6">Membership</a></li>
                     {/* <li><a href="" class="hover:underline me-4 md:me-6">Volunteer</a></li> */}
                     <li><a href="https://wa.me/254729753530" class="hover:underline me-4 md:me-6">Let's Talk</a></li>
-                    <li><a href="mailto:hi@northernbox.org" class="hover:underline me-4 md:me-6 sm:mt-5">hi@northernbox.org</a></li>
+                    <li><a href="mailto:hello@northernbox.org" class="hover:underline me-4 md:me-6 sm:mt-5">hello@northernbox.org</a></li>
                     <li><a href="mailto:contact@northernbox.org" class="hover:underline me-4 md:me-6">contact@northernbox.org</a></li>
                 </ul>
                     {/* <div className="" style={{outline: '1px solid red'}}> */}

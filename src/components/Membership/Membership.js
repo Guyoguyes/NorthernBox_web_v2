@@ -1,23 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
+
 // import Particles from 'react-particles-js'; 
 
 const  Membership = () =>{
+    
+
     return(
         <>
             <div className="breadcrumb-area rn-bg-color ptb--120 bg_image bg_image--1" data-black-overlay="6" style={{backgroundImage:'url(https://res.cloudinary.com/dabfdxbfj/image/upload/v1686429267/800px-Mt._Ololokwe_Samburu_awr1i1.jpg)', backgroundPosition:  'center', backgroundSize: 'cover'}}>
-            {/* <Particles 
-                    params={{ 
-                    particles: { 
-                        number: { 
-                        value: 200, 
-                        density: { 
-                            enable: true, 
-                            value_area: 1000, 
-                        } 
-                        }, 
-                    }, 
-                    }} 
-                />  */}
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">

@@ -175,11 +175,15 @@ function About(props) {
                                 className="rn-btn btn-white" href="membership">Get Started</a>
                             </div>
                         </div>
-                        <div className="thumbnail">
-                            <div className="image">
-                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1686430339/IMG_8657_yolykv.jpg" alt="Finding Images"  style={{width: '65vw', height: '750px', objectFit: 'cover'}}/>
+                        {/* <div className="relative"> */}
+                            <div className="thumbnail">
+                                <div className="image">
+                                <img src="https://res.cloudinary.com/dabfdxbfj/image/upload/v1708733149/north_lhasio.jpg" alt="Finding Images" style={{width: '65vw', height: '750px', objectFit: 'cover'}} />
+                                </div>
+                                <div className="absolute inset-0 bg-blue-800 opacity-50 h-full" style={{width: '65vw', height: '750px', objectFit: 'cover'}}></div>
                             </div>
-                        </div>
+                        {/* </div> */}
+
                     </div>
                 </div>
                 {/*// <!-- End Finding us Area  -->*/}

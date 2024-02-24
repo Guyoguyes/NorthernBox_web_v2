@@ -1,26 +1,49 @@
 import React, { useState } from "react";
-import { Tab, initTE } from "tw-elements";
+import { collection, addDoc } from "firebase/firestore";
+import {db} from '../../firebase'
 
 function MemberShipRegistration() {
-  const [activeTab, setActiveTab] = useState("tabs-home01");
-  const [formData, setFormData] = useState({});
-  const [error, setError] = useState("");
 
   
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  
+    const [fName, setFname] = useState()
+    const [lName, setLname] = useState()
+    const [email, setEmail] = useState()
+    const [phone, setPhone] = useState()
+    const [age, setAge] = useState()
+    const [gender, setGender] = useState()
+    const [rescidence, setRescidence] = useState()
+    const [areasOfInterset, setAreasOfInterset] = useState()
+    const [education, setEducation] = useState()
+    const [connectionSite, setConnectionSite] = useState()
+    const [otherConnectionSite, setOtherConnectionSite] = useState('')
+    const [conditionTerms, setConditionTerms] = useState()
 
-  const [selectedOption, setSelectedOption] = useState('');
+    const addMember = async (e) => {
+        e.preventDefault();
+        const newMember = {
+            fName: fName,
+            lName: lName,
+            email: email,
+            phone: phone,
+            age: age,
+            gender: gender,
+            rescidence: rescidence,
+            areasOfInterset: areasOfInterset,
+            education: education,
+            connectionSite: connectionSite,
+            otherConnectionSite: otherConnectionSite, // fixed property name
+            conditionTerms: conditionTerms
+        };
+        console.log("New Member Data: " + JSON.stringify(newMember));
+        try {
+            const response = await addDoc(collection(db, 'members'), newMember); 
+            console.log('Member Added Successfully! ', response);
 
-    const handleSelectChange = (e) => {
-        setSelectedOption(e.target.value);
-    };
-
+        } catch (e) {
+            console.error("Error adding Member: " + e.message);
+        }
+    }
   
 
   return (
@@ -58,7 +81,7 @@ function MemberShipRegistration() {
             </div>
 
 
-            <form className="mt-4 m-5">
+            <form className="mt-4 m-5" onSubmit={addMember}>
                 <div className="grid gap-6 mb-6 md:grid-cols-2">
                     <div>
                         <label htmlFor="first_name" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">First Name</label>
@@ -67,6 +90,8 @@ function MemberShipRegistration() {
                             id="first_name"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="John"
+                            value={fName}
+                            onChange={(e) => setFname(e.target.value)}
                             required
                         />
                     </div>
@@ -77,6 +102,8 @@ function MemberShipRegistration() {
                             id="last_name"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="John"
+                            value={lName}
+                            onChange={(e) => setLname(e.target.value)}
                             required
                         />
                     </div>
@@ -89,6 +116,8 @@ function MemberShipRegistration() {
                             id="email"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="john.doe@mail.com"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
                     </div>
@@ -99,6 +128,8 @@ function MemberShipRegistration() {
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="(+254)-XXX-XXX-XXX"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
                             required
                         />
                     </div>
@@ -108,9 +139,9 @@ function MemberShipRegistration() {
                         <label htmlFor="gender" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Age</label>
                         <select
                             id="gender"
-                            className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                            value={selectedOption}
-                            onChange={handleSelectChange}
+                            className={`bg-transparent border border-blue-500 ${age ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
+                            value={age}
+                            onChange={(e) => setAge(e.target.value)}
                             required
                         >
                             <option value="" disabled></option>
@@ -130,9 +161,9 @@ function MemberShipRegistration() {
                         <label htmlFor="gender" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Gender</label>
                         <select
                             id="gender"
-                            className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                            value={selectedOption}
-                            onChange={handleSelectChange}
+                            className={`bg-transparent border border-blue-500 ${gender ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
+                            value={gender}
+                            onChange={(e) => setGender(e.target.value)}
                             required
                         >
                             <option value="" disabled></option>
@@ -150,6 +181,8 @@ function MemberShipRegistration() {
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="Nairobi"
+                            value={rescidence}
+                            onChange={(e) => setRescidence(e.target.value)}
                             required
                         />
                 </div>
@@ -157,10 +190,10 @@ function MemberShipRegistration() {
                     <label htmlFor="Specialization" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Areas Of Interest / Specialization</label>
                     <select
                         id="Specialization"
-                        className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                        value={selectedOption}
-                        onChange={handleSelectChange}
-                        required
+                        className={`bg-transparent border border-blue-500 ${areasOfInterset ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
+                        value={areasOfInterset}
+                            onChange={(e) => setAreasOfInterset(e.target.value)}
+                            required
                     >
                         <option value=""></option>
                         <option value="webDevelopment">Web Development</option>
@@ -176,10 +209,10 @@ function MemberShipRegistration() {
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Level of Education</label>
                     <select
                         id="email"
-                        className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                        value={selectedOption}
-                        onChange={handleSelectChange}
-                        required
+                        className={`bg-transparent border border-blue-500 ${education ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
+                        value={education}
+                            onChange={(e) => setEducation(e.target.value)}
+                            required
                     >
                         <option value=""></option>
                         <option value="highSchool">High School</option>
@@ -195,10 +228,10 @@ function MemberShipRegistration() {
                     <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">How Did You Hear About Us </label>
                     <select
                         id="email"
-                        className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                        value={selectedOption}
-                        onChange={handleSelectChange}
-                        required
+                        className={`bg-transparent border border-blue-500 ${connectionSite ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
+                        value={connectionSite}
+                            onChange={(e) => setConnectionSite(e.target.value)}
+                            required
                     >
                         <option value=""></option>
                         <option value="friend">From a Friend</option>
@@ -217,13 +250,18 @@ function MemberShipRegistration() {
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder=""
+                            value={otherConnectionSite}
+                            onChange={(e) => setOtherConnectionSite(e.target.value)}
                             required
                         />
                 </div>
 
                 <div class="flex items-start mb-6">
                     <div class="flex items-center h-5">
-                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required/>
+                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" 
+                    checked={conditionTerms}
+                            onChange={(e) => setConditionTerms(e.target.checked)}
+                    />
                     </div>
                     <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
                 </div>

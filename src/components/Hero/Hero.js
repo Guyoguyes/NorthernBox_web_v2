@@ -93,17 +93,10 @@ function Hero(props) {
           >
             {item.caption}
           </h1>
-          <p
-            style={{
-              color: '#fefefe',
-              fontSize: '24px',
-              width: '70%',
-              textAlign: 'center',
-              margin: '0 auto',
-            }}
-          >
+          <p className="text-white text-2xl md:text-lg lg:text-xl xl:text-2xl w-2/3 md:w-1/2 lg:w-1/3 xl:w-35 mx-auto">
             {item.description}
           </p>
+
           <div style={{ marginTop: '30px' }}>
             <a
               style={{

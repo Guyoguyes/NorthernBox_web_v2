@@ -1,19 +1,36 @@
 import React, {useState} from 'react';
+import AlertMsg from '../Modal/AlrtMsg';
+
 
 function Contact(props) {
+    const [showModal, setShowModal] = useState(false);
+    const [icon ,setIcon] = useState();
+    const [title, setTitle] = useState();
 
 
     const [name, setName] = useState()
     const [email, setEmail] = useState()
     const [ subject1, setSubject1] = useState()
-    const [ message1, setMessage] = useState()
+    const [ message1, setMessage1] = useState()
     const [submitBtn, setSubmitBtn] = useState('SEND MESSAGE')
+
+    const toggleModal = () => {
+        setShowModal(!showModal);
+      };
+    
+      const handleConfirm = () => {
+        toggleModal();
+      };
+    
+      const handleCancel = () => {
+        toggleModal();
+      };
 
 
     var form_id_js = "javascript_form";
 
     const data_js = {
-        "access_token": "3v3tu76wy2qdqzwcl2gk8tbq"
+        "access_token": "r5525y2xvswqhuun2455wrl6"
     };
 
     function js_onSuccess() {
@@ -36,21 +53,33 @@ function Contact(props) {
         var request = new XMLHttpRequest();
         request.onreadystatechange = function() {
             if (request.readyState == 4 && request.status == 200) {
-                alert('Message sent successfully. We will get back as soon as possible')
+                // alert('Message sent successfully. We will get back as soon as possible')
+                setTitle('Message sent successfully. We will get back as soon as possible')
+                setIcon('alertCircle')
+                // setInterval(() => {
+                    toggleModal();
+                // }, 2000);
+                
+                
                 console.log('EMAIL SUCCESSS')
                 setName('')
                 setEmail('')
                 setSubject1('')
-                setMessage('')
+                setMessage1('')
                 setSubmitBtn('SEND MESSAGE')
             } else
             if(request.readyState == 4) {
-                alert(`Failed. ${request.response} Please try again!!`)
+                // alert(`Failed. ${request.response} Please try again!!`)
+                setTitle('Failed. ${request.response} Please try again!!')
+                setIcon('alertCircle')
+                // setInterval(() => {
+                    toggleModal();
+                // }, 2000);
                 console.log(`EMAIL FAILED: ${request.response}`)
                 setName('')
                 setEmail('')
                 setSubject1('')
-                setMessage('')
+                setMessage1('')
                 setSubmitBtn('SEND MESSAGE')
             }
         };
@@ -129,8 +158,8 @@ function Contact(props) {
                                     </div>
                                     <div className="inner">
                                         <h4 className="title">Email Address</h4>
-                                        <p><a href="mailto:admin@gmail.com">info@northernbox.org</a></p>
-                                        <p><a href="mailto:example@gmail.com">contact@northernbox.org</a></p>
+                                        <p><a href="mailto:info@northernbox.org">info@northernbox.org</a></p>
+                                        <p><a href="mailto:hi@northernbox.org">hi@northernbox.org</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +195,7 @@ function Contact(props) {
                                         <p className="description">We are available to talk. Connect with me via
                                             phone:
                                             <a href="tel:+254729753530">+254 729 753 530/ +254 723 212 256</a> or email:
-                                            <a href="mailto:contact@northernbox.co.k">contact@northernbox.org</a>
+                                            <a href="mailto:hi@northernbox.co.k">hi@northernbox.org</a>
                                         </p>
                                     </div>
                                     <div className="form-wrapper">
@@ -175,7 +204,7 @@ function Contact(props) {
                                             <input name="name" type="text" value={name} onChange={(e) =>setName(e.target.value)} placeholder="Your Name *"/>
                                             <input name="email" type="email" value={email} onChange={(e) =>setEmail(e.target.value)} placeholder="Your email *"/>
                                             <input name="subject" value={subject1} onChange={(e) => setSubject1(e.target.value)} type="text" placeholder="Write a Subject"/>
-                                            <textarea name="message" value={message1} onChange={(e) => setMessage(e.target.value)} placeholder="Your Message"></textarea>
+                                            <textarea name="message" value={message1} onChange={(e) => setMessage1(e.target.value)} placeholder="Your Message"></textarea>
                                             <button type="submit" className="rn-button-style--2 btn_solid">
                                                 <span>{submitBtn}</span>
                                             </button>
@@ -205,6 +234,15 @@ function Contact(props) {
                 </div>
                 {/*// <!-- End Brand Area -->*/}
             </main>
+            {showModal && (
+                <AlertMsg
+                message="Are you sure you want to delete this product?"
+                onConfirm={handleConfirm}
+                onCancel={handleCancel}
+                icon={icon} // Replace <CustomIcon /> with your desired icon component
+                />
+            )}
+            
         </>
 
     );

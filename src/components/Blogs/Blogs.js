@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react';
 function Blogs(props) {
 
 
-    const itemsPerPage = 4; // Number of items to display per page
+    const itemsPerPage = 6; // Number of items to display per page
     const [currentPage, setCurrentPage] = useState(1);
     const [blogData, setBlogData] = useState([]);
 
@@ -11,39 +11,47 @@ function Blogs(props) {
     const dummyData = [
         {
         id: 1,
-        image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783275/create_an_image_0_mycdnn.png",
+        image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783788/I_am_from_north_1_dtcv4y.png",
         category: "Development",
-        title: "Getting tickets to the big show",
-        link: "com_soon",
+        title: "Revolutionizing Northern Kenya's STEM Landscape",
+        link: "blogs/:id",
         },
         {
         id: 2,
-        image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783275/create_an_image_0_mycdnn.png",
-        category: "Development",
-        title: "Another blog post",
-        link: "com_soon",
+        image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1705077199/image0_0_ag1okr.jpg",
+        category: "Community Engagement",
+        title: "Empowering Youth: Bridging the Digital Divide in Northern Kenya",
+        link: "blogs/:id",
         },
         {
-            id: 2,
-            image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783275/create_an_image_0_mycdnn.png",
-            category: "Development",
-            title: "Another blog post",
-            link: "com_soon",
+            id: 3,
+            image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783274/create_me_an_im_1_pvqmnp.png",
+            category: "Career Growth",
+            title: "Unlocking New Opportunities: How Data Skills Can Propel Your Career",
+            link: "blogs/:id",
             },
             {
-                id: 2,
-                image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783275/create_an_image_0_mycdnn.png",
-                category: "Development",
-                title: "Another blog post",
-                link: "com_soon",
+                id: 4,
+                image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1709072861/image1_0_t7zya4.jpg",
+                category: "Sustainable Development",
+                title: "Tech Solutions for a Sustainable Future: Innovating for Environmental Impact",
+                link: "blogs/:id",
                 },
                 {
-                    id: 2,
-                    image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783275/create_an_image_0_mycdnn.png",
-                    category: "Development",
-                    title: "Another blog post",
-                    link: "com_soon",
+                    id: 5,
+                    image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1705077199/image1_0_tcmip9.jpg",
+                    category: "Education and Training",
+                    title: "Beyond the Classroom: How Online Learning is Reshaping Education in Remote Areas",
+                    link: "blogs/:id",
                     },
+                    {
+                        id: 6,
+                        image: "https://res.cloudinary.com/dabfdxbfj/image/upload/v1700783788/I_am_from_north_1_dtcv4y.png",
+                        category: "Development",
+                        title: "Revolutionizing Northern Kenya's STEM Landscape",
+                        link: "blogs/:id",
+                        },
+                        
         // Add more dummy blog items as needed
     ];
 
@@ -91,8 +99,11 @@ function Blogs(props) {
                         </div>
 
                         <div className="row mt--20">
+                        
                         {currentItems.map((item) => (
+                            
                             <div key={item.id} className="col-lg-4 col-md-6 col-sm-6 col-12">
+                            <a href={item.link}>
                             <div className="blog blog-style--1">
                                 <div className="thumbnail">
                                 <a href={item.link}>
@@ -111,7 +122,10 @@ function Blogs(props) {
                                 </div>
                                 </div>
                             </div>
+                            </a>
                             </div>
+                            
+                            
                         ))}
                         </div>
 

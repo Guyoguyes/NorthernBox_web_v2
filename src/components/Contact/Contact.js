@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import AlertMsg from '../Modal/AlrtMsg';
+import Swal from 'sweetalert2'
 
 
 function Contact(props) {
@@ -54,11 +54,12 @@ function Contact(props) {
         request.onreadystatechange = function() {
             if (request.readyState == 4 && request.status == 200) {
                 // alert('Message sent successfully. We will get back as soon as possible')
-                setTitle('Message sent successfully. We will get back as soon as possible')
-                setIcon('alertCircle')
-                // setInterval(() => {
-                    toggleModal();
-                // }, 2000);
+                Swal.fire({
+                    title: 'Success!',
+                    text: `Message sent successfully. We will get back as soon as possible`,
+                    icon: 'success',
+                    confirmButtonText: 'Back'
+                  })
                 
                 
                 console.log('EMAIL SUCCESSS')
@@ -70,11 +71,12 @@ function Contact(props) {
             } else
             if(request.readyState == 4) {
                 // alert(`Failed. ${request.response} Please try again!!`)
-                setTitle('Failed. ${request.response} Please try again!!')
-                setIcon('alertCircle')
-                // setInterval(() => {
-                    toggleModal();
-                // }, 2000);
+                Swal.fire({
+                    title: 'Error!',
+                    text: `Failed. ${request.response} Please try again!!`,
+                    icon: 'error',
+                    confirmButtonText: 'Try'
+                  })
                 console.log(`EMAIL FAILED: ${request.response}`)
                 setName('')
                 setEmail('')
@@ -234,14 +236,6 @@ function Contact(props) {
                 </div>
                 {/*// <!-- End Brand Area -->*/}
             </main>
-            {showModal && (
-                <AlertMsg
-                message="Are you sure you want to delete this product?"
-                onConfirm={handleConfirm}
-                onCancel={handleCancel}
-                icon={icon} // Replace <CustomIcon /> with your desired icon component
-                />
-            )}
             
         </>
 

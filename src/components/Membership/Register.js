@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { collection, addDoc } from "firebase/firestore";
 import {db} from '../../firebase'
+import Swal from 'sweetalert2'
 
 function MemberShipRegistration() {
 
@@ -37,10 +38,23 @@ function MemberShipRegistration() {
         };
         console.log("New Member Data: " + JSON.stringify(newMember));
         try {
-            const response = await addDoc(collection(db, 'members'), newMember); 
+            const response = await addDoc(collection(db, 'members'), newMember);
+            Swal.fire({
+                title: 'Success!',
+                text: `Member Added Successfully! `,
+                icon: 'success',
+                confirmButtonText: 'Back'
+              })
+            
             console.log('Member Added Successfully! ', response);
 
         } catch (e) {
+            Swal.fire({
+                title: 'Error!',
+                text: `Failed. Please try again!!`,
+                icon: 'error',
+                confirmButtonText: 'Try'
+              })
             console.error("Error adding Member: " + e.message);
         }
     }

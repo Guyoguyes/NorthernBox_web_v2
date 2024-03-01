@@ -3,12 +3,76 @@ import React, {useState, useRef, useEffect} from "react";
 import '@yaireo/tagify/dist/tagify.css';
 import Tagify from '@yaireo/tagify';
 import { IKImage, IKContext, IKUpload } from 'imagekitio-react';
+import { collection, addDoc } from "firebase/firestore";
+import {db} from '../../firebase'
+import Swal from 'sweetalert2'
 
 
 function AmbassadorReg(){
 
   const [selectedOption, setSelectedOption] = useState('');
   const [tags, setTags] = useState([]);
+
+    const [fName, setFname] = useState()
+    const [lName, setLname] = useState()
+    const [email, setEmail] = useState()
+    const [phone, setPhone] = useState()
+    const [age, setAge] = useState()
+    const [gender, setGender] = useState()
+    const [rescidence, setRescidence] = useState()
+    const [education, setEducation] = useState()
+    const [communityExprience, setCommunityExprience] = useState()
+    const [communityExprienceDesc, setCommunityExprienceDesc] = useState()
+    const [purpose, setPurpose] = useState()
+    const [areasOfInterset, setAreasOfInterset] = useState()
+    const [skills, setSkills] = useState([])
+    const [connectionSite, setConnectionSite] = useState()
+    const [otherConnectionSite, setOtherConnectionSite] = useState('')
+    const [conditionTerms, setConditionTerms] = useState()
+
+    const addAmbassador = async (e) => {
+        e.preventDefault();
+        const newAmb = {
+            fName: fName,
+            lName: lName,
+            email: email,
+            phone: phone,
+            age: age,
+            gender: gender,
+            rescidence: rescidence,
+            areasOfInterset: areasOfInterset,
+            education: education,
+            communityExprience: communityExprience,
+            communityExprienceDesc: communityExprienceDesc,
+            purpose: purpose,
+            skills: skills,
+            connectionSite: connectionSite,
+            otherConnectionSite: otherConnectionSite, // fixed property name
+            conditionTerms: conditionTerms
+        };
+        console.log("New Amb Data: " + JSON.stringify(newAmb));
+        try {
+            const response = await addDoc(collection(db, 'ambassadors'), newAmb);
+            Swal.fire({
+                title: 'Success!',
+                text: `Ambassador Registered Successfully. You will be updated on the next step`,
+                icon: 'success',
+                confirmButtonText: 'Back'
+              })
+            
+            console.log('Ambassador Registered Successfully. ', response);
+
+        } catch (e) {
+            Swal.fire({
+                title: 'Error!',
+                text: `Failed. Please try again!!`,
+                icon: 'error',
+                confirmButtonText: 'Try'
+              })
+            console.error("Error adding Ambassador: " + e.message);
+        }
+    }
+
 
   const inputRef = useRef(null);
 
@@ -19,21 +83,7 @@ function AmbassadorReg(){
     }
   }, []);
 
-  const handleSelectChange = (e) => {
-      setSelectedOption(e.target.value);
-  };
 
-  
-
-  const handleDelete = (i) => {
-    const newTags = [...tags];
-    newTags.splice(i, 1);
-    setTags(newTags);
-  };
-
-  const handleAddition = (tag) => {
-    setTags([...tags, tag]);
-  };
 
 
 
@@ -157,7 +207,7 @@ function AmbassadorReg(){
             </div>
 
 
-            <form className="mt-4 m-5">
+            <form className="mt-4 m-5" onSubmit={addAmbassador}>
                 <p class="text-gray-900 text-4xl dark:text-grey-500 text-center mx-auto mb-10">Become A NorthernBox Ambassador</p>
 
                 <div className="grid gap-6 mb-6 md:grid-cols-2">
@@ -168,6 +218,8 @@ function AmbassadorReg(){
                             id="first_name"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="John"
+                            value={fName}
+                            onChange={(e) => setFname(e.target.value)}
                             required
                         />
                     </div>
@@ -178,6 +230,8 @@ function AmbassadorReg(){
                             id="last_name"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="John"
+                            value={lName}
+                            onChange={(e) => setLname(e.target.value)}
                             required
                         />
                     </div>
@@ -190,6 +244,8 @@ function AmbassadorReg(){
                             id="email"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="john.doe@mail.com"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
                             required
                         />
                     </div>
@@ -200,6 +256,8 @@ function AmbassadorReg(){
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="(+254)-XXX-XXX-XXX"
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
                             required
                         />
                     </div>
@@ -210,8 +268,8 @@ function AmbassadorReg(){
                         <select
                             id="gender"
                             className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                            value={selectedOption}
-                            onChange={handleSelectChange}
+                            value={age}
+                            onChange={(e) => setAge(e.target.value)}
                             required
                         >
                             <option value="" disabled></option>
@@ -232,8 +290,8 @@ function AmbassadorReg(){
                         <select
                             id="gender"
                             className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                            value={selectedOption}
-                            onChange={handleSelectChange}
+                            value={gender}
+                            onChange={(e) => setGender(e.target.value)}
                             required
                         >
                             <option value="" disabled></option>
@@ -251,6 +309,8 @@ function AmbassadorReg(){
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder="Nairobi"
+                            value={rescidence}
+                            onChange={(e) => setRescidence(e.target.value)}
                             required
                         />
                 </div>
@@ -259,8 +319,8 @@ function AmbassadorReg(){
                     <select
                         id="email"
                         className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                        value={selectedOption}
-                        onChange={handleSelectChange}
+                        value={education}
+                        onChange={(e) => setEducation(e.target.value)}
                         required
                     >
                         <option value=""></option>
@@ -275,12 +335,12 @@ function AmbassadorReg(){
                 </div>
 
                 <div className="mb-6">
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Do you any Community Engagement Experience</label>
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Do you have any Community Engagement Experience</label>
                     <select
                         id="email"
                         className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                        value={selectedOption}
-                        onChange={handleSelectChange}
+                        value={communityExprience}
+                        onChange={(e) => setCommunityExprience(e.target.value)}
                         required
                     >
                         <option value="" disabled></option>
@@ -296,23 +356,27 @@ function AmbassadorReg(){
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder=""
+                            value={communityExprienceDesc}
+                            onChange={(e) => setCommunityExprienceDesc(e.target.value)}
                             required
                         />
                 </div>
 
                 <div className="mb-6">
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">What motivates them to become an ambassador for NorthernBox?</label>
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">What motivates you to become an ambassador for NorthernBox?</label>
                     <input
                             type="text"
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder=""
+                            value={purpose}
+                            onChange={(e) => setPurpose(e.target.value)}
                             required
                         />
                 </div>
 
                 <div className="mb-6">
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Their areas of interest or expertise</label>
+                    <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-500 dark:text-gray-400">Your areas of interest or expertise</label>
                     <input
                             type="text"
                             id="phone"
@@ -320,6 +384,8 @@ function AmbassadorReg(){
                             placeholder=""
                             ref={inputRef}
                             autoFocus
+                            value={areasOfInterset}
+                            onChange={(e) => setAreasOfInterset(e.target.value)}
                             required
                         />
                 </div>
@@ -332,6 +398,8 @@ function AmbassadorReg(){
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder=""
                             ref={inputRef}
+                            value={skills}
+                            onChange={(e) => setSkills(e.target.value)}
                             autoFocus
                             required
                         />
@@ -344,8 +412,8 @@ function AmbassadorReg(){
                     <select
                         id="email"
                         className={`bg-transparent border border-blue-500 ${selectedOption ? 'text-black' : 'text-gray-500'} text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500`}
-                        value={selectedOption}
-                        onChange={handleSelectChange}
+                        value={connectionSite}
+                        onChange={(e) => setConnectionSite(e.target.value)}
                         required
                     >
                         <option value=""></option>
@@ -366,13 +434,17 @@ function AmbassadorReg(){
                             id="phone"
                             className="bg-transparent border border-blue-500 text-black text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500"
                             placeholder=""
+                            value={otherConnectionSite}
+                            onChange={(e) => setOtherConnectionSite(e.target.value)}
                             required
                         />
                 </div>
 
                 <div class="flex items-start mb-6">
                     <div class="flex items-center h-5">
-                    <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" required/>
+                    <input id="remember" type="checkbox"  class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-blue-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-blue-600 dark:ring-offset-gray-800" 
+                    value={conditionTerms}
+                            onChange={(e) => setConditionTerms(e.target.value)}required/>
                     </div>
                     <label for="remember" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">I agree with the <a href="#" class="text-blue-600 hover:underline dark:text-blue-500">terms and conditions</a>.</label>
                 </div>

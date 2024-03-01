@@ -52,7 +52,7 @@ function DataCampDonates() {
                           
                         <br/>
                         <br/>
-                        <p>Join us in this exciting partnership with DataCamp Donates and unlock the potential of data-driven success. To get started, visit <a href="https://bit.ly/3K4dvvu" style={{color: 'blue'}}>THIS LINK</a> and explore the vast array of courses available. Let's embark on a transformative learning journey together!</p>
+                        <p>Join us in this exciting partnership with DataCamp Donates and unlock the potential of data-driven success. To get started, visit <a href="https://bit.ly/3TfECsm" style={{color: 'blue'}}>THIS LINK</a> and explore the vast array of courses available. Let's embark on a transformative learning journey together!</p>
 
                     
                     </div>
